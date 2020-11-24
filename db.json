@@ -1,0 +1,71 @@
+{
+  "profiles": [
+    {
+      "id": 1,
+      "name": "Lisa",
+      "password": "abc",
+      "gender": "female",
+      "yearOfBirth": 2000,
+      "location": "Köln",
+      "fastingDays": 8,
+      "healthStatus": [{ "positiv": 1, "negativ": 1 }],
+      "timelog": "46h",
+      "screentime": "10min",
+      "activities": ["meditation", "Yoga"]
+    },
+    {
+      "id": 2,
+      "name": "Anne",
+      "password": "def",
+      "gender": "female",
+      "yearOfBirth": 1993,
+      "location": "Düsseldorf",
+      "fastingDays": 10,
+      "healthStatus": [{ "positiv": 3, "negativ": 1 }],
+      "timelog": "46h",
+      "screentime": "10min",
+      "activities": ["Yoga", "Jogging"]
+    },
+    {
+      "id": 3,
+      "name": "Max",
+      "password": "ghi",
+      "gender": "male",
+      "yearOfBirth": 1990,
+      "location": "Köln",
+      "fastingDays": 9,
+      "healthStatus": [{ "positiv": 12, "negativ": 2 }],
+      "timelog": "46h",
+      "screentime": "10min",
+      "activities": ""
+    }
+  ],
+  "messages": [
+    {
+      "fastingHigh": "du hast nun die hälfte deiner Fastenzeit erreicht. Heute erwartet dich dein Fastenhoch! Geh doch heute eine größere Runde spazieren!",
+      "fastingCricis": "heute hast du wahrscheinlich deine Fastenkriese. Das ist ganz normal! Gönne dir heute etwas Ruhe."
+    }
+  ],
+  "groceries": [
+    {
+      "fruits": ["Zitronen", "Äfpel", "Quitten"],
+      "drinks": [
+        "Buttermilch",
+        "Kräutertee",
+        "Johannisbeersaft",
+        "Rotebeetesaft",
+        "Sauerkrautsaft"
+      ],
+      "vegetables": [
+        "Kartoffeln",
+        "Möhren",
+        "Knollensellerie",
+        "Petersilie",
+        "Petersilienwurzel",
+        "Zwiebel",
+        "Porree"
+      ],
+      "cereal": ["Reis", "Knäckebrot"]
+    }
+  ]
+}
