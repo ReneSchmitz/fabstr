@@ -1,7 +1,7 @@
 import styled from "styled-components/macro";
 
 // inputcard
-export const InputCard = styled.div`
+export const InputPassword = styled.div`
   display: grid;
   grid-template-columns: 35px auto;
   grid-template-rows: 5px auto 40px 5px;
