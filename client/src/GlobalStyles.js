@@ -11,17 +11,16 @@ const GlobalStyle = createGlobalStyle`
     }
     ::placeholder {
         color: #202020;
-        font-size: 1.4em;
+        font-size: 1.3em;
     }
 
     :root {
+        font-size: 16px;
     }
     
     body {
-
         font-family: 'Roboto', sans-serif;
         font-weight: 400;
-        font-size: 1.4rem;
         color: #202020;
         margin: 0;
         text-rendering: optimizeLegibility !important;
@@ -33,8 +32,19 @@ const GlobalStyle = createGlobalStyle`
     h1 {
             font-family: 'Bodoni 72', serif;
             font-weight: 900;
+            font-size: 3.5em !important;
+            margin: 0;
+            text-align: center;
         }
+    
+    h2 {
+        letter-spacing: -0.02em;
+    }
+    h2,    
     h4 {
+        font-family: 'Roboto', sans-serif;
+        font-weight: 400;
+        font-size: 1.3em;
         color: #808080;
 
         }
