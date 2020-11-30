@@ -1,7 +1,7 @@
 import { MainLogo } from "./mainLogo";
 import { Header } from "./mainLogo";
 import { HorizontalLine } from "./mainLogo";
-import { HeaderTwo } from "./mainLogo";
+import { SubHeader } from "./mainLogo";
 
 import logo from "../stories/assets/icon/fabstr.png";
 
@@ -16,7 +16,7 @@ export const Main_Logo = () => {
       <MainLogo src={logo} alt="logo" />
       <Header>Fabstr.</Header>
       <HorizontalLine />
-      <HeaderTwo>Therapeutic Fasting</HeaderTwo>
+      <SubHeader>Therapeutic Fasting</SubHeader>
     </>
   );
 };

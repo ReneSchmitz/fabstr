@@ -15,11 +15,9 @@ export const Input_Mail = () => {
     <>
       <InputMail>
         <HeaderFour>Email Address</HeaderFour>
-        <>
-          <Icon src={Mail} alt="mail" />
+        <Icon src={Mail} alt="mail" />
 
-          <InputPwd type="email" placeholder="Username@gmail.com" />
-        </>
+        <InputPwd type="email" placeholder="Username@gmail.com" />
       </InputMail>
     </>
   );

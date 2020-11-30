@@ -17,14 +17,12 @@ export const InputPassword = styled.div`
   box-shadow: 30px 30px 60px #0d569f29, -10px -10px 70px #ffffff;
 `;
 
-// h4
 export const HeaderFour = styled.h4`
   grid-area: header;
   align-self: end;
   padding: 10px 0px 5px 0px;
   font-weight: 400;
 `;
-// img
 
 export const Icon = styled.img`
   display: grid;
@@ -32,7 +30,6 @@ export const Icon = styled.img`
   grid-area: image;
 `;
 
-// input
 export const InputPwd = styled.input`
   display: grid;
   align-self: left;

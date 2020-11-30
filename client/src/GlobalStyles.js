@@ -15,12 +15,12 @@ const GlobalStyle = createGlobalStyle`
     }
 
     :root {
-        font-size: 16px;
     }
     
     body {
         font-family: 'Roboto', sans-serif;
         font-weight: 400;
+        font-size: 16px;
         color: #202020;
         margin: 0;
         text-rendering: optimizeLegibility !important;
@@ -32,7 +32,7 @@ const GlobalStyle = createGlobalStyle`
     h1 {
             font-family: 'Bodoni 72', serif;
             font-weight: 900;
-            font-size: 3.5em !important;
+            font-size: 3.5em;
             margin: 0;
             text-align: center;
         }

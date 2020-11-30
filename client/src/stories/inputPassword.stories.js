@@ -15,11 +15,10 @@ export const Input_Password = () => {
     <>
       <InputPassword>
         <HeaderFour>Password</HeaderFour>
-        <>
-          <Icon src={Lock} alt="lock" />
 
-          <InputPwd type="password" placeholder="*************" />
-        </>
+        <Icon src={Lock} alt="lock" />
+
+        <InputPwd type="password" placeholder="*************" />
       </InputPassword>
     </>
   );

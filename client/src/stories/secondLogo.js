@@ -7,7 +7,6 @@ export const SecondLogo = styled.img`
 `;
 
 export const Header = styled.h1`
-  font-size: 2em;
   display: grid;
   padding-top: 15px;
   text-shadow: 0px 3px 6px #00000029;

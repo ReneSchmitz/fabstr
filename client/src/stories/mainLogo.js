@@ -7,7 +7,6 @@ export const MainLogo = styled.img`
 `;
 
 export const Header = styled.h1`
-  font-size: 2em;
   display: grid;
   padding-top: 15px;
   text-shadow: 0px 3px 6px #00000029;
@@ -17,6 +16,6 @@ export const HorizontalLine = styled.hr`
   margin: 15px 0px;
 `;
 
-export const HeaderTwo = styled.h2`
+export const SubHeader = styled.h2`
   display: grid;
 `;
