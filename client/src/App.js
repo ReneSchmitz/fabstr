@@ -1,5 +1,5 @@
 import React from "react";
-import logo from "./fabstr.png";
+import logo from "./stories/assets/icon/fabstr.png";
 import "./App.css";
 import GlobalStyles from "./GlobalStyles";
 
