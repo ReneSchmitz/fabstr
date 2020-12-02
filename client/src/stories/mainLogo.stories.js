@@ -3,7 +3,7 @@ import { Header } from "./mainLogo";
 import { HorizontalLine } from "./mainLogo";
 import { SubHeader } from "./mainLogo";
 
-import logo from "../stories/assets/icon/fabstr.png";
+import logo from "../assets/icon/fabstr.png";
 
 export default {
   title: "Component/MainLogo",

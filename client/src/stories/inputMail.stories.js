@@ -3,7 +3,7 @@ import { HeaderFour } from "./inputMail";
 import { Icon } from "./inputMail";
 import { InputPwd } from "./inputMail";
 
-import Mail from "../stories/assets/icon/mail.svg";
+import Mail from "../assets/icon/mail.svg";
 
 export default {
   title: "Component/InputMail",
