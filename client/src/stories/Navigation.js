@@ -29,14 +29,10 @@ const Nav = styled.ul`
 const NavItem = styled.li`
   list-style: none;
   align-items: center;
-
-  img {
-    width: 50%;
-  }
 `;
 const Icon = css`
   width: 50%;
-  fill: ${(props) => (props.active ? "red" : "blau")};
+  fill: ${(props) => (props.active ? "#F2C384" : "#808080")};
 `;
 const HomeIcon = styled(Home)`
   ${Icon}
