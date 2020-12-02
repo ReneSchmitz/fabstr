@@ -1,10 +1,9 @@
-import styled from "styled-components/macro";
+import styled, { css } from "styled-components/macro";
 import PropTypes from "prop-types";
-
-import home from "../assets/icon/home.svg";
-import list from "../assets/icon/list.svg";
-import calender from "../assets/icon/calender.svg";
-import face from "../assets/icon/face.svg";
+import { ReactComponent as Home } from "../assets/icon/home.svg";
+import { ReactComponent as List } from "../assets/icon/list.svg";
+import { ReactComponent as Calender } from "../assets/icon/calender.svg";
+import { ReactComponent as Info } from "../assets/icon/info.svg";
 
 const Footer = styled.footer`
   margin: 0px;
@@ -36,22 +35,41 @@ const NavItem = styled.li`
     width: 50%;
   }
 `;
+const Icon = css`
+  width: 50%;
+  fill: ${(props) => (props.active ? "red" : "blau")};
+`;
+const HomeIcon = styled(Home)`
+  ${Icon}
+`;
+
+const ListIcon = styled(List)`
+  ${Icon}
+`;
+
+const CalenderIcon = styled(Calender)`
+  ${Icon}
+`;
+
+const MoodIcon = styled(Info)`
+  ${Icon}
+`;
 
 export default function Navigation({ activePath }) {
   return (
     <Footer>
       <Nav>
-        <NavItem active={activePath === "/"}>
-          <img src={home} alt="home" />
+        <NavItem>
+          <HomeIcon active={activePath === "/"} />
         </NavItem>
-        <NavItem active={activePath === "/list"}>
-          <img src={list} alt="list" />
+        <NavItem>
+          <ListIcon active={activePath === "/list"} />
         </NavItem>
-        <NavItem active={activePath === "/calender"}>
-          <img src={calender} alt="calender" />
+        <NavItem>
+          <CalenderIcon active={activePath === "/calender"} />
         </NavItem>
-        <NavItem active={activePath === "/mood"}>
-          <img src={face} alt="mood" />
+        <NavItem>
+          <MoodIcon active={activePath === "/mood"} />
         </NavItem>
       </Nav>
     </Footer>
