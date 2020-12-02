@@ -3,7 +3,7 @@ import { HeaderFour } from "./inputPassword";
 import { Icon } from "./inputPassword";
 import { InputPwd } from "./inputPassword";
 
-import Lock from "../stories/assets/icon/lock.svg";
+import Lock from "../assets/icon/lock.svg";
 
 export default {
   title: "Component/InputPassword",
