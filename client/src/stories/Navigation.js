@@ -31,8 +31,15 @@ const NavItem = styled.li`
   align-items: center;
 `;
 const Icon = css`
-  width: 50%;
   fill: ${(props) => (props.active ? "#F2C384" : "#808080")};
+  padding: ${(props) => (props.active ? "-20px" : "0px")};
+  background-image: ${(props) =>
+    props.active
+      ? "linear-gradient(120deg, #fafafa 0%, #eff2f8 100%)"
+      : "none"};
+  box-sizing: border-box;
+  padding: 13px;
+  border-radius: 50%;
 `;
 const HomeIcon = styled(Home)`
   ${Icon}
