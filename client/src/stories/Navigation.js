@@ -27,7 +27,6 @@ const Nav = styled.ul`
 `;
 
 const NavItem = styled.li`
-  color: ${(props) => (props.active ? "red" : "blau")};
   list-style: none;
   align-items: center;
 
