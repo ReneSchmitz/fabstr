@@ -1,24 +1,8 @@
-import { InputMail } from "./inputMail";
-import { HeaderFour } from "./inputMail";
-import { Icon } from "./inputMail";
-import { InputPwd } from "./inputMail";
-
-import Mail from "../assets/icon/mail.svg";
+import { InputMail } from "../components/inputMail";
 
 export default {
   title: "Component/InputMail",
   component: InputMail,
 };
 
-export const Input_Mail = () => {
-  return (
-    <>
-      <InputMail>
-        <HeaderFour>Email Address</HeaderFour>
-        <Icon src={Mail} alt="mail" />
-
-        <InputPwd type="email" placeholder="Username@gmail.com" />
-      </InputMail>
-    </>
-  );
-};
+export const Input_Mail = () => <InputMail />;

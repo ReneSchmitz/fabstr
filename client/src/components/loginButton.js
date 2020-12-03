@@ -1,6 +1,6 @@
 import styled from "styled-components/macro";
 
-export const LoginButton = styled.button`
+const Button = styled.button`
   height: 3.5rem;
   width: 450px;
   padding: 20px 40px;
@@ -12,3 +12,5 @@ export const LoginButton = styled.button`
   color: #ffffff;
   font-weight: 400;
 `;
+
+export const LoginButton = () => <Button>Login</Button>;

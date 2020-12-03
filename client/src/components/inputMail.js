@@ -1,7 +1,8 @@
 import styled from "styled-components/macro";
 
-// inputcard
-export const InputPassword = styled.div`
+import Mail from "../assets/icon/mail.svg";
+
+const Input = styled.div`
   display: grid;
   grid-template-columns: 35px auto;
   grid-template-rows: 5px auto 40px 5px;
@@ -17,27 +18,40 @@ export const InputPassword = styled.div`
   box-shadow: 30px 30px 60px #0d569f29, -10px -10px 70px #ffffff;
 `;
 
-export const HeaderFour = styled.h4`
+const HeaderFour = styled.h4`
   grid-area: header;
   align-self: end;
   padding: 10px 0px 5px 0px;
   font-weight: 400;
 `;
 
-export const Icon = styled.img`
+const Icon = styled.img`
   display: grid;
   align-self: center;
   grid-area: image;
 `;
 
-export const InputPwd = styled.input`
+const MailInput = styled.input`
   display: grid;
   align-self: left;
   grid-area: main;
-  margin-top: 6px;
+  margin-top: 2px;
   margin-left: 15px;
   font-size: 16px;
   border: none;
   cursor: pointer;
   font-weight: 400;
 `;
+
+export const InputMail = () => {
+  return (
+    <>
+      <Input>
+        <HeaderFour>Email Address</HeaderFour>
+        <Icon src={Mail} alt="mail" />
+
+        <MailInput type="email" placeholder="Username@gmail.com" />
+      </Input>
+    </>
+  );
+};

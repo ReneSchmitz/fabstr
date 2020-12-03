@@ -1,8 +1,8 @@
-import { LoginButton } from "./loginButton";
+import { LoginButton } from "../components/loginButton";
 
 export default {
   title: "Component/LoginButton",
   component: LoginButton,
 };
 
-export const Login_Button = () => <LoginButton>Login</LoginButton>;
+export const Login_Button = () => <LoginButton />;
