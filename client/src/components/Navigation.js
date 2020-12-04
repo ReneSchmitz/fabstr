@@ -1,5 +1,6 @@
 import styled, { css } from "styled-components/macro";
 import PropTypes from "prop-types";
+import { Link } from "react-router-dom";
 import { ReactComponent as Home } from "../assets/icon/home.svg";
 import { ReactComponent as List } from "../assets/icon/list.svg";
 import { ReactComponent as Calender } from "../assets/icon/calender.svg";
@@ -62,16 +63,24 @@ export default function Navigation({ activePath }) {
     <Footer>
       <Nav>
         <NavItem>
-          <HomeIcon active={activePath === "/"} />
+          <Link to="/">
+            <HomeIcon active={activePath === "/"} />
+          </Link>
         </NavItem>
         <NavItem>
-          <ListIcon active={activePath === "/list"} />
+          <Link to="/list">
+            <ListIcon active={activePath === "/list"} />
+          </Link>
         </NavItem>
         <NavItem>
-          <CalenderIcon active={activePath === "/calender"} />
+          <Link to="/calender">
+            <CalenderIcon active={activePath === "/calender"} />
+          </Link>
         </NavItem>
         <NavItem>
-          <MoodIcon active={activePath === "/mood"} />
+          <Link to="/mood">
+            <MoodIcon active={activePath === "/mood"} />
+          </Link>
         </NavItem>
       </Nav>
     </Footer>

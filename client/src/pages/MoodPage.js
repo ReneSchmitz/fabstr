@@ -1,5 +1,6 @@
 import styled from "styled-components/macro";
 import logo from "../assets/icon/fabstr.png";
+import Navigation from "../components/Navigation";
 
 const Container = styled.div`
   display: flex;
@@ -31,6 +32,7 @@ export const MoodPage = () => {
     <Container>
       <Title>Mood</Title>
       <Logo src={logo} alt="logo" />
+      <Navigation activePath="/mood" />
     </Container>
   );
 };
