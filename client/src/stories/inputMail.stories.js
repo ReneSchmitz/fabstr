@@ -1,4 +1,4 @@
-import { InputMail } from "../components/inputMail";
+import { InputMail } from "../components/InputMail";
 
 export default {
   title: "Component/InputMail",
