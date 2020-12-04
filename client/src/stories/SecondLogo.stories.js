@@ -1,4 +1,4 @@
-import { SecondLogo } from "../components/dgsegsecondLogo";
+import { SecondLogo } from "../components/SecondLogo";
 
 export default {
   title: "Component/SecondLogo",
