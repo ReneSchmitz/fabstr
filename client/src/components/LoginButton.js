@@ -13,4 +13,10 @@ const Button = styled.button`
   font-weight: 400;
 `;
 
-export const LoginButton = () => <Button>Login</Button>;
+export default function LoginButton() {
+  return (
+    <>
+      <Button>Login</Button>
+    </>
+  );
+}
