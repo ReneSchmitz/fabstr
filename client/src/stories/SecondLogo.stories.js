@@ -1,4 +1,4 @@
-import { SecondLogo } from "../components/secondLogo";
+import SecondLogo from "../components/SecondLogo";
 
 export default {
   title: "Component/SecondLogo",

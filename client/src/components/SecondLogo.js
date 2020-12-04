@@ -14,11 +14,11 @@ const Header = styled.h1`
   text-shadow: 0px 3px 6px #00000029;
 `;
 
-export const SecondLogo = () => {
+export default function SecondLogo() {
   return (
     <>
       <Logo src={logo} alt="fabstr" />
       <Header>Fabstr.</Header>
     </>
   );
-};
+}

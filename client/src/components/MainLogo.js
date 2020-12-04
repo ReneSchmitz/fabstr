@@ -22,7 +22,7 @@ const SubHeader = styled.h2`
   display: grid;
 `;
 
-export const MainLogo = () => {
+export default function MainLogo() {
   return (
     <>
       <Logo src={logo} alt="fabstr" />
@@ -31,4 +31,4 @@ export const MainLogo = () => {
       <SubHeader>Therapeutic Fasting</SubHeader>
     </>
   );
-};
+}

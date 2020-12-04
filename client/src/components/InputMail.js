@@ -43,7 +43,7 @@ const MailInput = styled.input`
   font-weight: 400;
 `;
 
-export const InputMail = () => {
+export default function InputMail() {
   return (
     <>
       <Input>
@@ -54,4 +54,4 @@ export const InputMail = () => {
       </Input>
     </>
   );
-};
+}
