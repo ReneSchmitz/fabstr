@@ -1,4 +1,4 @@
-import { InputPassword } from "../components/InputPassword";
+import InputPassword from "../components/InputPassword";
 
 export default {
   title: "Component/InputPassword",

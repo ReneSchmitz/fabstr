@@ -43,7 +43,7 @@ const PwdInput = styled.input`
   font-weight: 400;
 `;
 
-export const InputPassword = () => {
+export default function InputPassword() {
   return (
     <>
       <Input>
@@ -55,4 +55,4 @@ export const InputPassword = () => {
       </Input>
     </>
   );
-};
+}
