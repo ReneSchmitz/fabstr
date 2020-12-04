@@ -1,4 +1,4 @@
-import { MainLogo } from "../components/mainLogo";
+import { MainLogo } from "../components/MainLogo";
 
 export default {
   title: "Component/MainLogo",
