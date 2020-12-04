@@ -1,3 +1,4 @@
+import { MemoryRouter } from "react-router-dom";
 import Navigation from "../components/Navigation";
 
 export default {
@@ -5,7 +6,13 @@ export default {
   component: Navigation,
 };
 
-const Template = (args) => <Navigation {...args} />;
+const Template = (args) => {
+  return (
+    <MemoryRouter>
+      <Navigation {...args} />
+    </MemoryRouter>
+  );
+};
 export const Home = Template.bind({});
 Home.args = {
   activePath: "/",
