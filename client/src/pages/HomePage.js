@@ -32,7 +32,7 @@ export const HomePage = () => {
     <Container>
       <Title>Homepage</Title>
       <Logo src={logo} alt="logo" />
-      <Navigation />
+      <Navigation activePath="/" />
     </Container>
   );
 };

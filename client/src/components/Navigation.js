@@ -1,11 +1,10 @@
 import styled, { css } from "styled-components/macro";
 import PropTypes from "prop-types";
+import { Link } from "react-router-dom";
 import { ReactComponent as Home } from "../assets/icon/home.svg";
 import { ReactComponent as List } from "../assets/icon/list.svg";
 import { ReactComponent as Calender } from "../assets/icon/calender.svg";
 import { ReactComponent as Info } from "../assets/icon/info.svg";
-import { useLocation } from "react-router-dom";
-import { useEffect } from "react";
 
 const Footer = styled.footer`
   margin: 0px;
@@ -60,22 +59,28 @@ const MoodIcon = styled(Info)`
 `;
 
 export default function Navigation({ activePath }) {
-  const location = useLocation();
-  useEffect(() => {}, [location]);
   return (
     <Footer>
       <Nav>
         <NavItem>
-          <HomeIcon active={location.activePath === "/"} />
+          <Link to="/">
+            <HomeIcon active={activePath === "/"} />
+          </Link>
         </NavItem>
         <NavItem>
-          <ListIcon active={location.activePath === "/list"} />
+          <Link to="/list">
+            <ListIcon active={activePath === "/list"} />
+          </Link>
         </NavItem>
         <NavItem>
-          <CalenderIcon active={location.activePath === "/calender"} />
+          <Link to="/calender">
+            <CalenderIcon active={activePath === "/calender"} />
+          </Link>
         </NavItem>
         <NavItem>
-          <MoodIcon active={location.activePath === "/mood"} />
+          <Link to="/mood">
+            <MoodIcon active={activePath === "/mood"} />
+          </Link>
         </NavItem>
       </Nav>
     </Footer>

@@ -1,5 +1,6 @@
 import styled from "styled-components/macro";
 import logo from "../assets/icon/fabstr.png";
+import Navigation from "../components/Navigation";
 
 const Container = styled.div`
   display: flex;
@@ -31,6 +32,7 @@ export const CalenderPage = () => {
     <Container>
       <Title>Kalender</Title>
       <Logo src={logo} alt="logo" />
+      <Navigation activePath="/calender" />
     </Container>
   );
 };
