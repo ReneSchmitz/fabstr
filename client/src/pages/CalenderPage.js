@@ -23,8 +23,12 @@ const Logo = styled.img`
   width: 40%;
 `;
 
-const Title = styled.h1`
-  font-size: 3.5rem;
+const Title = styled.h2`
+  font-size: 2em;
+  position: fixed;
+  top: 10%;
+  display: grid;
+  place-self: right;
 `;
 
 export const CalenderPage = () => {
