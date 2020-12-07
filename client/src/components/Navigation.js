@@ -7,6 +7,8 @@ import { ReactComponent as Calender } from "../assets/icon/calender.svg";
 import { ReactComponent as Info } from "../assets/icon/info.svg";
 
 const Footer = styled.footer`
+  position: fixed;
+  bottom: 0;
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
@@ -14,7 +16,7 @@ const Footer = styled.footer`
   align-self: flex-end;
   justify-content: space-around;
   align-items: center;
-  min-height: 15vh;
+  min-height: 10vh;
   background-color: #ffffff;
   border-radius: 30px 30px 0px 0px;
   box-shadow: 0px -3px 20px #0d569f29;
