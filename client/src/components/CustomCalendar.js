@@ -28,7 +28,12 @@ export default function Calendar() {
           </div>
         </div>
         <div className="column col-center">
-          <span>{format(currentDate, dateFormat)}</span>
+          <span>
+            {new Intl.DateTimeFormat("de-DE", {
+              year: "numeric",
+              month: "long",
+            }).format(currentDate, dateFormat)}
+          </span>
         </div>
         <div className="column col-end">
           <div className="icon" onClick={nextMonth}>
@@ -39,13 +44,16 @@ export default function Calendar() {
     );
   };
   const daysOfWeek = () => {
-    const dateFormat = "EEE";
+    const dateFormat = "eee";
     const days = [];
     let startDate = startOfWeek(currentDate);
     for (let i = 0; i < 7; i++) {
       days.push(
         <div className="column col-center" key={i}>
-          {format(addDays(startDate, i), dateFormat)}
+          {new Intl.DateTimeFormat("de-DE", { weekday: "short" }).format(
+            addDays(startDate, i),
+            dateFormat
+          )}
         </div>
       );
     }
@@ -66,7 +74,6 @@ export default function Calendar() {
       for (let i = 0; i < 7; i++) {
         formattedDate = format(day, dateFormat);
         const cloneDay = day;
-        console.log(cloneDay);
         days.push(
           <div
             className={`column cell ${

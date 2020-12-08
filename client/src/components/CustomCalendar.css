@@ -4,11 +4,9 @@
   font-style: normal;
   display: inline-block;
   vertical-align: middle;
-  line-height: 1;
   text-transform: none;
-  letter-spacing: normal;
+  justify-content: space-around;
   word-wrap: normal;
-  white-space: nowrap;
   direction: ltr;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
@@ -18,20 +16,6 @@
 /* GENERAL */
 * {
   box-sizing: border-box;
-}
-body {
-  font-family: "Open Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
-  font-size: 1em;
-  font-weight: 300;
-  line-height: 1.5;
-  position: relative;
-}
-header {
-  display: block;
-  width: 100%;
-  padding: 1.75em 0;
-  border-bottom: 1px solid lightgray;
-  background: white;
 }
 /* GRID */
 .row {
@@ -49,14 +33,14 @@ header {
   flex-grow: 1;
   flex-basis: 0;
   max-width: 100%;
+  display: flex;
+  justify-content: center;
 }
 /* Calendar */
 .calendar {
   display: block;
   position: relative;
   width: 90%;
-  background: white;
-  border: 1px solid lightgray;
   height: auto;
   margin: 0 auto;
 }
@@ -65,10 +49,11 @@ header {
   font-weight: 700;
   font-size: 115%;
   padding: 1.5em 0;
-  border-bottom: 1px solid lightgray;
 }
 .calendar .header .icon {
   cursor: pointer;
+  display: flex;
+  align-self: center;
   transition: 0.15s ease-out;
 }
 .calendar .header .icon:hover {
@@ -88,15 +73,12 @@ header {
   color: gray;
   font-size: 70%;
   padding: 0.75em 0;
-  border-bottom: 1px solid lightgray;
 }
 .calendar .body .cell {
   position: relative;
-  height: 6em;
-  border-right: 1px solid lightgray;
+  height: 4em;
   overflow: hidden;
   cursor: pointer;
-  background: white;
   transition: 0.25s ease-out;
 }
 .calendar .body .cell:hover {
@@ -109,7 +91,6 @@ header {
   border-image-slice: 1;
 }
 .calendar .body .row {
-  border-bottom: 1px solid lightgray;
 }
 .calendar .body .row:last-child {
   border-bottom: none;
@@ -118,7 +99,8 @@ header {
   border-right: none;
 }
 .calendar .body .cell .number {
-  position: absolute;
+  justify-content: center;
+  align-self: center;
   font-size: 82.5%;
   line-height: 1;
   top: 0.75em;
