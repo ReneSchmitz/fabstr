@@ -7,14 +7,14 @@ import {
   format,
   isSameDay,
   isSameMonth,
-  parse,
   startOfMonth,
   startOfWeek,
   subMonths,
+  toDate,
 } from "date-fns";
 import "./CustomCalendar.css";
 
-export default function CustomCalendar() {
+export default function Calendar() {
   const [currentDate, setCurrentDate] = useState(new Date());
   const [selectedDate, setSelectedDate] = useState(new Date());
 
@@ -39,7 +39,7 @@ export default function CustomCalendar() {
     );
   };
   const daysOfWeek = () => {
-    const dateFormat = "ddd";
+    const dateFormat = "EEE";
     const days = [];
     let startDate = startOfWeek(currentDate);
     for (let i = 0; i < 7; i++) {
@@ -66,6 +66,7 @@ export default function CustomCalendar() {
       for (let i = 0; i < 7; i++) {
         formattedDate = format(day, dateFormat);
         const cloneDay = day;
+        console.log(cloneDay);
         days.push(
           <div
             className={`column cell ${
@@ -76,7 +77,7 @@ export default function CustomCalendar() {
                 : ""
             }`}
             key={day}
-            onClick={() => onDateClick(parse(cloneDay))}
+            onClick={() => onDateClick(toDate(cloneDay))}
           >
             <span className="number">{formattedDate}</span>
             <span className="bg">{formattedDate}</span>
