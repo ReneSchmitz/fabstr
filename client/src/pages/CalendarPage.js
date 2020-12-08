@@ -1,5 +1,5 @@
 import styled from "styled-components/macro";
-import logo from "../assets/icon/fabstr.png";
+import Calendar from "../components/Calendar";
 import Navigation from "../components/Navigation";
 
 const Container = styled.div`
@@ -13,16 +13,6 @@ const Container = styled.div`
   background: #eff2f8;
 `;
 
-const Logo = styled.img`
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin: 0;
-  padding: 0;
-  width: 40%;
-`;
-
 const Title = styled.h2`
   font-size: 2em;
   position: fixed;
@@ -31,12 +21,12 @@ const Title = styled.h2`
   place-self: right;
 `;
 
-export const CalenderPage = () => {
+export const CalendarPage = () => {
   return (
     <Container>
       <Title>Kalender</Title>
-      <Logo src={logo} alt="logo" />
-      <Navigation activePath="/calender" />
+      <Calendar />
+      <Navigation activePath="/calendar" />
     </Container>
   );
 };

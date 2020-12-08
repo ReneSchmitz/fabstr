@@ -5,7 +5,7 @@ import GlobalStyles from "./GlobalStyles";
 import LoadingScreen from "./pages/LoadingScreen";
 import { HomePage } from "./pages/HomePage";
 import { ListPage } from "./pages/ListPage";
-import { CalenderPage } from "./pages/CalenderPage";
+import { CalendarPage } from "./pages/CalendarPage";
 import { MoodPage } from "./pages/MoodPage";
 
 function App() {
@@ -25,8 +25,8 @@ function App() {
         <Route exact path="/list">
           <ListPage />
         </Route>
-        <Route exact path="/calender">
-          <CalenderPage />
+        <Route exact path="/calendar">
+          <CalendarPage />
         </Route>
         <Route exact path="/mood">
           <MoodPage />
