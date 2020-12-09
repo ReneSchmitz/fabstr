@@ -21,9 +21,9 @@ export const List = Template.bind({});
 List.args = {
   activePath: "/list",
 };
-export const Calender = Template.bind({});
-Calender.args = {
-  activePath: "/calender",
+export const Calendar = Template.bind({});
+Calendar.args = {
+  activePath: "/calendar",
 };
 export const Mood = Template.bind({});
 Mood.args = {

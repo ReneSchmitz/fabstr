@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
 import { ReactComponent as Home } from "../assets/icon/home.svg";
 import { ReactComponent as List } from "../assets/icon/list.svg";
-import { ReactComponent as Calender } from "../assets/icon/calender.svg";
+import { ReactComponent as Calendar } from "../assets/icon/calendar.svg";
 import { ReactComponent as Info } from "../assets/icon/info.svg";
 
 const Footer = styled.footer`
@@ -13,7 +13,6 @@ const Footer = styled.footer`
   padding: 0px;
   box-sizing: border-box;
   display: flex;
-  align-self: flex-end;
   justify-content: space-around;
   align-items: center;
   min-height: 10vh;
@@ -52,7 +51,7 @@ const ListIcon = styled(List)`
   ${Icon}
 `;
 
-const CalenderIcon = styled(Calender)`
+const CalendarIcon = styled(Calendar)`
   ${Icon}
 `;
 
@@ -75,8 +74,8 @@ export default function Navigation({ activePath }) {
           </Link>
         </NavItem>
         <NavItem>
-          <Link to="/calender">
-            <CalenderIcon active={activePath === "/calender"} />
+          <Link to="/calendar">
+            <CalendarIcon active={activePath === "/calendar"} />
           </Link>
         </NavItem>
         <NavItem>
