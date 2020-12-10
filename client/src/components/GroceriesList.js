@@ -7,10 +7,17 @@ export default function GroceriesList() {
   useEffect(() => {
     async function doGet() {
       const groceries = await getGroceries();
-      setGroceries(groceries);
+      setGroceries();
+      console.log(groceries);
     }
     doGet();
   }, []);
 
-  return <>{groceries}</>;
+  return (
+    <>
+      {groceries.title?.map((title) => (
+        <div key={title}></div>
+      ))}
+    </>
+  );
 }
