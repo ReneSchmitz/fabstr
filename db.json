@@ -46,28 +46,6 @@
       "fastingCricis": "heute hast du wahrscheinlich deine Fastenkriese. Das ist ganz normal! Gönne dir heute etwas Ruhe."
     }
   ],
-  "grocery": [
-    {
-      "fruits": ["Zitronen", "Äfpel", "Quitten"],
-      "drinks": [
-        "Buttermilch",
-        "Kräutertee",
-        "Johannisbeersaft",
-        "Rotebeetesaft",
-        "Sauerkrautsaft"
-      ],
-      "vegetables": [
-        "Kartoffeln",
-        "Möhren",
-        "Knollensellerie",
-        "Petersilie",
-        "Petersilienwurzel",
-        "Zwiebel",
-        "Porree"
-      ],
-      "cereal": ["Reis", "Knäckebrot"]
-    }
-  ],
   "groceries": [
     {
       "title": "fruits",
@@ -82,6 +60,22 @@
         "Rotebeetesaft",
         "Sauerkrautsaft"
       ]
+    },
+    {
+      "title": "vegetables",
+      "name": [
+        "Kartoffeln",
+        "Möhren",
+        "Knollensellerie",
+        "Petersilie",
+        "Petersilienwurzel",
+        "Zwiebel",
+        "Porree"
+      ]
+    },
+    {
+      "title": "cereals",
+      "name": ["Reis", "Knäckebrot"]
     }
   ]
 }
