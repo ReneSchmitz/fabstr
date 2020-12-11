@@ -2,30 +2,30 @@ export async function getFruits() {
   const response = await fetch(
     `http://localhost:3001/api/groceries?type=fruit`
   );
-  const groceries = await response.json();
-  return groceries;
+  const fruits = await response.json();
+  return fruits;
 }
 
 export async function getDrinks() {
   const response = await fetch(
     `http://localhost:3001/api/groceries?type=drink`
   );
-  const groceries = await response.json();
-  return groceries;
+  const drinks = await response.json();
+  return drinks;
 }
 
 export async function getVegetables() {
   const response = await fetch(
     `http://localhost:3001/api/groceries?type=vegetable`
   );
-  const groceries = await response.json();
-  return groceries;
+  const vegetables = await response.json();
+  return vegetables;
 }
 
 export async function getCereals() {
   const response = await fetch(
     `http://localhost:3001/api/groceries?type=cereal`
   );
-  const groceries = await response.json();
-  return groceries;
+  const cereals = await response.json();
+  return cereals;
 }

@@ -2,10 +2,10 @@ import { useEffect, useState } from "react";
 import { getFruits, getDrinks, getVegetables, getCereals } from "../utils/api";
 
 export default function GroceriesList() {
-  const [fruit, setFruit] = useState(null);
-  const [drink, setDrink] = useState(null);
-  const [vegetable, setVegetable] = useState(null);
-  const [cereal, setCereal] = useState(null);
+  const [getFruit, setFruit] = useState(null);
+  const [getDrink, setDrink] = useState(null);
+  const [getVegetable, setVegetable] = useState(null);
+  const [getCereal, setCereal] = useState(null);
 
   useEffect(() => {
     async function doGet() {
@@ -41,19 +41,23 @@ export default function GroceriesList() {
 
   return (
     <>
-      {fruit &&
-        fruit.map((foodItem) => <div key={foodItem.type}>{foodItem.name}</div>)}
-      <br />
-      {drink &&
-        drink.map((foodItem) => <div key={foodItem.type}>{foodItem.name}</div>)}
-      <br />
-      {vegetable &&
-        vegetable.map((foodItem) => (
+      {getFruit &&
+        getFruit.map((foodItem) => (
           <div key={foodItem.type}>{foodItem.name}</div>
         ))}
       <br />
-      {cereal &&
-        cereal.map((foodItem) => (
+      {getDrink &&
+        getDrink.map((foodItem) => (
+          <div key={foodItem.type}>{foodItem.name}</div>
+        ))}
+      <br />
+      {getVegetable &&
+        getVegetable.map((foodItem) => (
+          <div key={foodItem.type}>{foodItem.name}</div>
+        ))}
+      <br />
+      {getCereal &&
+        getCereal.map((foodItem) => (
           <div key={foodItem.type}>{foodItem.name}</div>
         ))}
       <br />
