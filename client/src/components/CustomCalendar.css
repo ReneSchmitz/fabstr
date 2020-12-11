@@ -90,8 +90,6 @@
   border-image: linear-gradient(45deg, #1affa0 0%, #cff153 40%);
   border-image-slice: 1;
 }
-.calendar .body .row {
-}
 .calendar .body .row:last-child {
   border-bottom: none;
 }
