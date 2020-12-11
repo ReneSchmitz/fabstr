@@ -48,34 +48,72 @@
   ],
   "groceries": [
     {
-      "title": "fruits",
-      "name": ["Zitronen", "Äpfel", "Quitten"]
+      "type": "fruit",
+      "name": "Zitronen"
     },
     {
-      "title": "drinks",
-      "name": [
-        "Buttermilch",
-        "Kräutertee",
-        "Johannisbeersaft",
-        "Rotebeetesaft",
-        "Sauerkrautsaft"
-      ]
+      "type": "fruit",
+      "name": "Äpfel"
     },
     {
-      "title": "vegetables",
-      "name": [
-        "Kartoffeln",
-        "Möhren",
-        "Knollensellerie",
-        "Petersilie",
-        "Petersilienwurzel",
-        "Zwiebel",
-        "Porree"
-      ]
+      "type": "fruit",
+      "name": "Quitten"
     },
     {
-      "title": "cereals",
-      "name": ["Reis", "Knäckebrot"]
+      "type": "drink",
+      "name": "Buttermilch"
+    },
+    {
+      "type": "drink",
+      "name": "Kräutertee"
+    },
+    {
+      "type": "drink",
+      "name": "Johannisbeersaft"
+    },
+    {
+      "type": "drink",
+      "name": "Rotebeetesaft"
+    },
+    {
+      "type": "drink",
+      "name": "Sauerkrautsaft"
+    },
+    {
+      "type": "vegetable",
+      "name": "Kartoffeln"
+    },
+    {
+      "type": "vegetable",
+      "name": "Möhren"
+    },
+    {
+      "type": "vegetable",
+      "name": "Knollensellerie"
+    },
+    {
+      "type": "vegetable",
+      "name": "Petersilie"
+    },
+    {
+      "type": "vegetable",
+      "name": "Petersilienwurzel"
+    },
+    {
+      "type": "vegetable",
+      "name": "Zwiebel"
+    },
+    {
+      "type": "vegetable",
+      "name": "Porree"
+    },
+    {
+      "type": "cereal",
+      "name": "Reis"
+    },
+    {
+      "type": "cereal",
+      "name": "Knäckebrot"
     }
   ]
 }
