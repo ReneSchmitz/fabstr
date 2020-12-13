@@ -7,15 +7,16 @@ const middlewares = jsonServer.defaults();
 const app = express();
 const port = process.env.PORT || 3001;
 
-app.use(middlewares);
-app.use("/api", router);
-
 app.use(express.static(path.join(__dirname, "client/build")));
 
 app.use(
   "/storybook",
   express.static(path.join(__dirname, "client/storybook-static"))
 );
+
+app.use(middlewares);
+app.use("/api", router);
+
 app.get("*", (request, response) => {
   response.sendFile(path.join(__dirname, "client/public", "index.html"));
 });

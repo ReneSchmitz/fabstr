@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { getFruits, getDrinks, getVegetables, getCereals } from "../utils/api";
+import GetCheckBox from "./Checkbox";
 
 export default function GroceriesList() {
   const [getFruit, setFruit] = useState(null);
@@ -41,26 +42,43 @@ export default function GroceriesList() {
 
   return (
     <>
-      {getFruit &&
-        getFruit.map((foodItem) => (
-          <div key={foodItem.type}>{foodItem.name}</div>
-        ))}
-      <br />
-      {getDrink &&
-        getDrink.map((foodItem) => (
-          <div key={foodItem.type}>{foodItem.name}</div>
-        ))}
-      <br />
-      {getVegetable &&
-        getVegetable.map((foodItem) => (
-          <div key={foodItem.type}>{foodItem.name}</div>
-        ))}
-      <br />
-      {getCereal &&
-        getCereal.map((foodItem) => (
-          <div key={foodItem.type}>{foodItem.name}</div>
-        ))}
-      <br />
+      <ul>
+        <h2>Obst</h2>
+        {getFruit &&
+          getFruit.map((foodItem) => (
+            <li key={foodItem.type}>
+              {foodItem.name} <GetCheckBox />
+            </li>
+          ))}
+        <br />
+        <h2>Getränke</h2>
+        {getDrink &&
+          getDrink.map((foodItem) => (
+            <li key={foodItem.type}>
+              {foodItem.name}
+              <GetCheckBox />
+            </li>
+          ))}
+
+        <br />
+        <h2>Gemüse</h2>
+        {getVegetable &&
+          getVegetable.map((foodItem) => (
+            <li key={foodItem.type}>
+              {foodItem.name}
+              <GetCheckBox />
+            </li>
+          ))}
+        <br />
+        <h2>Getreide</h2>
+        {getCereal &&
+          getCereal.map((foodItem) => (
+            <li key={foodItem.type}>
+              {foodItem.name}
+              <GetCheckBox />
+            </li>
+          ))}
+      </ul>
     </>
   );
 }

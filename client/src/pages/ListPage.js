@@ -1,5 +1,6 @@
 import styled from "styled-components/macro";
 import Navigation from "../components/Navigation";
+import GroceriesList from "../components/GroceriesList";
 
 const Container = styled.div`
   display: flex;
@@ -20,6 +21,7 @@ export const ListPage = () => {
   return (
     <Container>
       <Title>Einkaufsliste</Title>
+      <GroceriesList />
       <Navigation activePath="/list" />
     </Container>
   );

@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="87" height="87" viewBox="0 0 87 87">
+  <defs>
+    <radialGradient id="radial-gradient" cx="0.579" cy="0.303" r="0.581" gradientTransform="translate(0 -0.02) scale(1 1.067)" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#faf8f8"/>
+      <stop offset="1" stop-color="#eff2f8"/>
+    </radialGradient>
+    <filter id="Ellipse_31" x="0" y="0" width="87" height="87" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood flood-opacity="0.169"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Gruppe_34" data-name="Gruppe 34" transform="translate(-1839 243)">
+    <g transform="matrix(1, 0, 0, 1, 1839, -243)" filter="url(#Ellipse_31)">
+      <circle id="Ellipse_31-2" data-name="Ellipse 31" cx="34.5" cy="34.5" r="34.5" transform="translate(9 6)" fill="url(#radial-gradient)"/>
+    </g>
+    <path id="Icon_ionic-md-person" data-name="Icon ionic-md-person" d="M18,18a6.75,6.75,0,1,0-6.75-6.75A6.77,6.77,0,0,0,18,18Zm0,3.375c-4.472,0-13.5,2.278-13.5,6.75V31.5h27V28.125C31.5,23.653,22.472,21.375,18,21.375Z" transform="translate(1864.5 -220.5)" fill="gray"/>
+  </g>
+</svg>
