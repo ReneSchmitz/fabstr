@@ -7,6 +7,8 @@ import { HomePage } from "./pages/HomePage";
 import { ListPage } from "./pages/ListPage";
 import { CalendarPage } from "./pages/CalendarPage";
 import { MoodPage } from "./pages/MoodPage";
+import { HappyPage } from "./pages/HappyPage";
+import { SadPage } from "./pages/SadPage";
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -30,6 +32,12 @@ function App() {
         </Route>
         <Route exact path="/mood">
           <MoodPage />
+        </Route>
+        <Route exact path="/happy">
+          <HappyPage />
+        </Route>
+        <Route exact path="/sad">
+          <SadPage />
         </Route>
       </Switch>
     </Router>

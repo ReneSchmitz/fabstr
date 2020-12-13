@@ -1,6 +1,6 @@
 import styled from "styled-components/macro";
 import button from "../assets/icon/profile.svg";
-import Happiness from "../components/Mood";
+import Happiness from "../components/Sadness";
 import Navigation from "../components/Navigation";
 
 const Container = styled.div`
@@ -29,7 +29,7 @@ const ProfileButton = styled.img`
   z-index: 6;
 `;
 
-export const HomePage = () => {
+export const SadPage = () => {
   return (
     <Container>
       <ProfileButton src={button} alt="profil button" />
