@@ -1,6 +1,7 @@
 import styled from "styled-components/macro";
 import smile from "../assets/icon/smile.svg";
 import sad from "../assets/icon/sad.svg";
+import { Link } from "react-router-dom";
 
 const Header = styled.h1`
   font-family: Roboto;
@@ -37,8 +38,12 @@ export default function HappyComp() {
       <Header>Hi Lisa,</Header>
       <Text>wie geht es dir heute?</Text>
       <Container>
-        <Happiness src={smile} alt="happy" />
-        <Sadness src={sad} alt="sad" />
+        <Link to="/happy">
+          <Happiness src={smile} alt="happy" />
+        </Link>
+        <Link to="/sad">
+          <Sadness src={sad} alt="sad" />
+        </Link>
       </Container>
     </>
   );
