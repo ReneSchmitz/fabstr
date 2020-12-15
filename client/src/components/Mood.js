@@ -37,7 +37,6 @@ export default function Mood() {
 
   return (
     <>
-      {/* By default */}
       <Header>{greeting}</Header>
       <Text>{daily}</Text>
       <Container>
