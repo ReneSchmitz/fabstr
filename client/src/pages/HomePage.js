@@ -1,6 +1,6 @@
 import styled from "styled-components/macro";
 import button from "../assets/icon/profile.svg";
-import Happiness from "../components/Mood";
+import Mood from "../components/Mood";
 import Navigation from "../components/Navigation";
 
 const Container = styled.div`
@@ -33,7 +33,7 @@ export const HomePage = () => {
   return (
     <Container>
       <ProfileButton src={button} alt="profil button" />
-      <Happiness />
+      <Mood />
       <Navigation activePath="/" />
     </Container>
   );

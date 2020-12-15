@@ -1,6 +1,5 @@
 import styled from "styled-components/macro";
-import button from "../assets/icon/profile.svg";
-import Happiness from "../components/Happiness";
+import logo from "../assets/icon/fabstr.png";
 import Navigation from "../components/Navigation";
 
 const Container = styled.div`
@@ -14,27 +13,26 @@ const Container = styled.div`
   background: #eff2f8;
 `;
 
-const ProfileButton = styled.img`
-  position: fixed;
-  top: 0%;
+const Logo = styled.img`
   display: flex;
-  height: 20%;
   flex-direction: column;
-  align-self: flex-end;
+  justify-content: center;
   align-items: center;
-  box-sizing: border-box;
   margin: 0;
-  padding: 30px;
+  padding: 0;
   width: 40%;
-  z-index: 6;
 `;
 
-export const HappyPage = () => {
+const Title = styled.h1`
+  font-size: 3.5rem;
+`;
+
+export const ActivityPage = () => {
   return (
     <Container>
-      <ProfileButton src={button} alt="profil button" />
-      <Happiness />
-      <Navigation activePath="/" />
+      <Title>Activity</Title>
+      <Logo src={logo} alt="logo" />
+      <Navigation activePath="/mood" />
     </Container>
   );
 };

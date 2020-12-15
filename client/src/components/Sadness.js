@@ -33,10 +33,13 @@ const Sadness = styled.img`
 `;
 
 export default function HappyComp() {
+  const sadText = "Das ist ok!";
+  const sadDaily = "Gönn’ dir heute viel Ruhe.";
+
   return (
     <>
-      <Header>Das ist ok!</Header>
-      <Text>Gönn’ dir heute viel Ruhe.</Text>
+      <Header>{sadText}</Header>
+      <Text>{sadDaily}</Text>
       <Container>
         <Link to="/">
           <Happiness src={smile} alt="happy" />
