@@ -5,4 +5,6 @@ export default {
   component: GroceriesList,
 };
 
-export const Groceries_List = () => <GroceriesList />;
+export const Groceries_List = () => {
+  return <GroceriesList />;
+};

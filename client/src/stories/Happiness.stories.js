@@ -5,4 +5,4 @@ export default {
   component: Happiness,
 };
 
-export const Groceries_List = () => <Happiness />;
+export const Happyness_Daily = () => <Happiness />;

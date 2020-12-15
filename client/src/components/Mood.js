@@ -1,7 +1,7 @@
 import styled from "styled-components/macro";
-import smile from "../assets/icon/smile.svg";
-import sad from "../assets/icon/sad.svg";
-import { Link } from "react-router-dom";
+// import happy from "../assets/icon/smile.svg";
+// import sad from "../assets/icon/sad.svg";
+// import PropTypes from "prop-types";
 
 const Header = styled.h1`
   font-family: Roboto;
@@ -24,27 +24,36 @@ const Container = styled.div`
   top: 57%;
 `;
 
-const Happiness = styled.img`
-  margin-right: 10px;
-`;
-
-const Sadness = styled.img`
-  margin-left: 10px;
-`;
-
 export default function HappyComp() {
   return (
     <>
+      {/* By default */}
       <Header>Hi Lisa,</Header>
       <Text>wie geht es dir heute?</Text>
-      <Container>
-        <Link to="/happy">
-          <Happiness src={smile} alt="happy" />
-        </Link>
-        <Link to="/sad">
-          <Sadness src={sad} alt="sad" />
-        </Link>
-      </Container>
+      {/* 2x icons */}
+      <Container></Container>
     </>
   );
 }
+
+// const HappyComp = ({ happy, sad, normal }) => {
+//   return (
+//     <>
+//       {/* By default */}
+//       <Header>Hi Lisa,</Header>
+//       <Text>wie geht es dir heute?</Text>
+//       {/* 2x icons */}
+//       <Container>
+//         <Happiness src={happy} alt="happy" />
+//         <Sadness src={sad} alt="sad" />
+//         <Normal src={normal} alt="normal" />
+//       </Container>
+//     </>
+//   );
+// };
+// HappyComp.propTypes = {
+//   happy: PropTypes.string.isRequired,
+//   sad: PropTypes.string.isRequired,
+//   normal: PropTypes.string.isRequired,
+// };
+// export default HappyComp;
