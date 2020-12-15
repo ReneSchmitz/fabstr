@@ -1,7 +1,9 @@
 import styled from "styled-components/macro";
 import button from "../assets/icon/profile.svg";
-import Mood from "../components/Mood";
+import Happiness from "../components/Happiness";
+import Sadness from "../components/Sadness";
 import Navigation from "../components/Navigation";
+import { useParams } from "react-router-dom";
 
 const Container = styled.div`
   display: flex;
@@ -29,11 +31,15 @@ const ProfileButton = styled.img`
   z-index: 6;
 `;
 
-export const HomePage = () => {
+export const MoodSelector = () => {
+  const { mood } = useParams();
   return (
     <Container>
       <ProfileButton src={button} alt="profil button" />
-      <Mood />
+      {mood === "happy" && <Happiness />}
+      {mood === "sad" && <Sadness />}
+      {mood !== "sad" && mood !== "happy" && <>unknown mood</>}
+
       <Navigation activePath="/" />
     </Container>
   );

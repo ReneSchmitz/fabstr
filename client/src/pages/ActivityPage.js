@@ -27,10 +27,10 @@ const Title = styled.h1`
   font-size: 3.5rem;
 `;
 
-export const MoodPage = () => {
+export const ActivityPage = () => {
   return (
     <Container>
-      <Title>Mood</Title>
+      <Title>Activity</Title>
       <Logo src={logo} alt="logo" />
       <Navigation activePath="/mood" />
     </Container>

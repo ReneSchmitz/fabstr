@@ -6,7 +6,8 @@ import LoadingScreen from "./pages/LoadingScreen";
 import { HomePage } from "./pages/HomePage";
 import { ListPage } from "./pages/ListPage";
 import { CalendarPage } from "./pages/CalendarPage";
-import { MoodPage } from "./pages/MoodPage";
+import { ActivityPage } from "./pages/ActivityPage";
+import { MoodSelector } from "./pages/MoodSelectorPage";
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -29,7 +30,10 @@ function App() {
           <CalendarPage />
         </Route>
         <Route exact path="/mood">
-          <MoodPage />
+          <ActivityPage />
+        </Route>
+        <Route exact path="/mood/:mood">
+          <MoodSelector />
         </Route>
       </Switch>
     </Router>
