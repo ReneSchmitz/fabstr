@@ -11,11 +11,11 @@ const Container = styled.div`
   box-shadow: 30px 30px 60px #0d569f29, -10px -10px 70px #ffffff;
 `;
 
-export default function UnloadingPhase() {
+export default function Preparation() {
   return (
     <>
       <Container>
-        <p>Unloading Phase</p>
+        <p>Preparation</p>
       </Container>
     </>
   );
