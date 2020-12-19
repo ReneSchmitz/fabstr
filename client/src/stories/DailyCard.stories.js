@@ -3,10 +3,11 @@ import UnloadingPhase from "../components/DailyCardUnloading";
 import FastingPhase from "../components/DailyCardFasting";
 import LoadingPhase from "../components/DailyCardLoading";
 import UsefulTipps from "../components/DailyCardUsefulTipps";
+import DailyCardSlider from "../components/DailyCardSlider";
 
 export default {
   title: "Component/DailyCard",
-  component: UnloadingPhase,
+  component: DailyCardSlider,
 };
 
 export const DailyCard_Preparation = () => {
@@ -27,4 +28,7 @@ export const DailyCard_LoadingPase = () => {
 
 export const DailyCard_UsefulTipps = () => {
   return <UsefulTipps />;
+};
+export const DailyCard_Slider = () => {
+  return <DailyCardSlider />;
 };
