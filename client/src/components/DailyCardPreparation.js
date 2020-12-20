@@ -17,15 +17,16 @@ const Container = styled.div`
 
 const Content = styled.div`
   overflow: auto;
-  height: 60vh;
+  height: 52vh;
 `;
 
 export default function Preparation() {
   return (
     <>
       <Container>
+        <p>Preparation</p>
+        <span>Tag 0</span>
         <Content>
-          <p>Preparation</p>
           <span>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum,
             dolorum enim earum excepturi molestiae odio voluptatibus libero
@@ -39,7 +40,6 @@ export default function Preparation() {
             error nam id?
           </span>
         </Content>
-        <span>Tag 0</span>
       </Container>
     </>
   );
