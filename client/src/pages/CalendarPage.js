@@ -1,5 +1,5 @@
 import styled from "styled-components/macro";
-import CustomCalendar from "../components/CustomCalendar";
+import DailyCardSlider from "../components/DailyCardSlider";
 import Navigation from "../components/Navigation";
 
 const Container = styled.div`
@@ -25,7 +25,7 @@ export const CalendarPage = () => {
   return (
     <Container>
       <Title>Kalender</Title>
-      <CustomCalendar />
+      <DailyCardSlider />
       <Navigation activePath="/calendar" />
     </Container>
   );
