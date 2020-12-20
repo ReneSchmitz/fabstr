@@ -28,7 +28,7 @@ const SlideHolder = styled.div`
   scroll-snap-type: x mandatory;
   scroll-padding: 0 0 0 20px;
   @media (min-device-width: 900px) {
-    margin-bottom: 20%;
+    margin-bottom: 27%;
   }
 `;
 
