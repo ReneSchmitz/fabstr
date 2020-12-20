@@ -79,8 +79,8 @@ export default function Navigation({ activePath }) {
           </Link>
         </NavItem>
         <NavItem>
-          <Link to="/mood">
-            <MoodIcon active={activePath === "/mood"} />
+          <Link to="/activity">
+            <MoodIcon active={activePath === "/activity"} />
           </Link>
         </NavItem>
       </Nav>

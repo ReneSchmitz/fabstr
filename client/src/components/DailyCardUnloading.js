@@ -18,11 +18,19 @@ const Header = styled.div`
   margin-bottom: 15px;
 `;
 
-const Content = styled.div`
+const TextContainer = styled.div`
   display: grid;
   overflow: auto;
   height: 52vh;
   padding-right: 20px;
+`;
+
+const Headline = styled.p`
+  padding-bottom: 8px;
+`;
+
+const Content = styled.span`
+  padding-bottom: 20%;
 `;
 
 export default function Preparation() {
@@ -33,20 +41,21 @@ export default function Preparation() {
           <p>Entlastungstage</p>
           <span>Tag 1-2</span>
         </Header>
-        <Content>
-          <span>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum,
-            dolorum enim earum excepturi molestiae odio voluptatibus libero
-            soluta, fugiat sequi nemo ab eveniet incidunt veritatis sit. Tenetur
-            error nam id?
-          </span>
-          <span>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum,
-            dolorum enim earum excepturi molestiae odio voluptatibus libero
-            soluta, fugiat sequi nemo ab eveniet incidunt veritatis sit. Tenetur
-            error nam id?
-          </span>
-        </Content>
+        <TextContainer>
+          <Headline>Morgens</Headline>
+          <Content>Obst uns Nüsse oder Birchermüsli</Content>
+          <Headline>Mittags</Headline>
+          <Content>
+            Frischkostplatte, Pellkartoffeln, Mörengemüse,Bio-Joghurt
+          </Content>
+          <Headline>Nachmittags</Headline>
+          <Content>1 Apfel, 10 Haselnüsse</Content>
+          <Headline>Abends</Headline>
+          <Content>
+            Obst oder Obstsalat mit Leinsamen, 1 Joghurt, Knäckebrot, viel
+            trinken
+          </Content>
+        </TextContainer>
       </Container>
     </>
   );
