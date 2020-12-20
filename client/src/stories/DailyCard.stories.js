@@ -1,3 +1,5 @@
+import { MemoryRouter } from "react-router-dom";
+
 import Preparation from "../components/DailyCardPreparation";
 import UnloadingPhase from "../components/DailyCardUnloading";
 import FastingPhase from "../components/DailyCardFasting";
@@ -11,7 +13,11 @@ export default {
 };
 
 export const DailyCard_Preparation = () => {
-  return <Preparation />;
+  return (
+    <MemoryRouter>
+      <Preparation />
+    </MemoryRouter>
+  );
 };
 
 export const DailyCard_UnloadingPase = () => {
@@ -30,5 +36,9 @@ export const DailyCard_UsefulTipps = () => {
   return <UsefulTipps />;
 };
 export const DailyCard_Slider = () => {
-  return <DailyCardSlider />;
+  return (
+    <MemoryRouter>
+      <DailyCardSlider />
+    </MemoryRouter>
+  );
 };
