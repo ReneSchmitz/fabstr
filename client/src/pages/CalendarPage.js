@@ -16,9 +16,9 @@ const Container = styled.div`
 const Title = styled.h2`
   font-size: 2em;
   position: fixed;
-  top: 10%;
+  top: 9%;
   display: grid;
-  place-self: right;
+  left: 2.4em;
   z-index: 2;
 `;
 

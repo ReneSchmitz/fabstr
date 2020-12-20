@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import { ReactComponent as Home } from "../assets/icon/home.svg";
 import { ReactComponent as List } from "../assets/icon/list.svg";
 import { ReactComponent as Calendar } from "../assets/icon/calendar.svg";
-import { ReactComponent as Info } from "../assets/icon/info.svg";
+import { ReactComponent as Active } from "../assets/icon/info.svg";
 
 const Footer = styled.footer`
   position: fixed;
@@ -39,6 +39,7 @@ const Icon = css`
     props.active
       ? "linear-gradient(120deg, #fafafa 0%, #eff2f8 100%)"
       : "none"};
+  transform: ${(props) => (props.active ? "scale(1.2)" : "none")};
   box-sizing: border-box;
   padding: 13px;
   border-radius: 50%;
@@ -55,7 +56,7 @@ const CalendarIcon = styled(Calendar)`
   ${Icon}
 `;
 
-const MoodIcon = styled(Info)`
+const ActivIcon = styled(Active)`
   ${Icon}
 `;
 
@@ -80,7 +81,7 @@ export default function Navigation({ activePath }) {
         </NavItem>
         <NavItem>
           <Link to="/activity">
-            <MoodIcon active={activePath === "/activity"} />
+            <ActivIcon active={activePath === "/activity"} />
           </Link>
         </NavItem>
       </Nav>

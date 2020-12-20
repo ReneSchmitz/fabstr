@@ -32,7 +32,7 @@ export const ActivityPage = () => {
     <Container>
       <Title>Activity</Title>
       <Logo src={logo} alt="logo" />
-      <Navigation activePath="/mood" />
+      <Navigation activePath="/activity" />
     </Container>
   );
 };

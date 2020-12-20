@@ -18,11 +18,19 @@ const Header = styled.div`
   margin-bottom: 15px;
 `;
 
-const Content = styled.div`
+const TextContainer = styled.div`
   display: grid;
   overflow: auto;
   height: 52vh;
   padding-right: 20px;
+`;
+
+const Headline = styled.p`
+  padding-bottom: 8px;
+`;
+
+const Content = styled.span`
+  padding-bottom: 20%;
 `;
 
 export default function Preparation() {
@@ -33,20 +41,16 @@ export default function Preparation() {
           <p>Nützliches</p>
           <span>Tag ~</span>
         </Header>
-        <Content>
-          <span>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum,
-            dolorum enim earum excepturi molestiae odio voluptatibus libero
-            soluta, fugiat sequi nemo ab eveniet incidunt veritatis sit. Tenetur
-            error nam id?
-          </span>
-          <span>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum,
-            dolorum enim earum excepturi molestiae odio voluptatibus libero
-            soluta, fugiat sequi nemo ab eveniet incidunt veritatis sit. Tenetur
-            error nam id?
-          </span>
-        </Content>
+        <TextContainer>
+          <Headline>Geschafft!</Headline>
+          <Content>Du hast deine Fastenkur ervolgreich abgeschlossen.</Content>
+          <Headline>Die Zeit danach</Headline>
+          <Content>
+            Der Grundstein für eine gesündere Zukunft ist gelegt. Also, versuche
+            weiterhin auf schädliche Ernährungsweisen zu verzichten und dich
+            ausgewogen mit reichlich frischen Zutaten zu ernähren.
+          </Content>
+        </TextContainer>
       </Container>
     </>
   );
