@@ -5,7 +5,9 @@ import FastingPhase from "./DailyCardFasting";
 import LoadingPhase from "./DailyCardLoading";
 import UsefulTipps from "./DailyCardUsefulTipps";
 
-const Container = styled.div``;
+const Container = styled.div`
+  position: fixed;
+`;
 
 const SectionSlider = styled.section`
   display: grid;
@@ -13,10 +15,15 @@ const SectionSlider = styled.section`
 `;
 
 const SlideHolder = styled.div`
+  position: relative;
+  align-items: start;
+  top: 18%;
+  left: 0;
   display: grid;
   overflow: auto;
-  padding: 0 5% 3em;
-  grid-template-columns: 2fr auto;
+  padding: 0 5% 30%;
+  height: 100vh;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   grid-column-gap: 1.5em;
 `;
 
