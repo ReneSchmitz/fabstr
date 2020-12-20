@@ -1,9 +1,6 @@
 import styled from "styled-components/macro";
 
 const Container = styled.div`
-  display: grid;
-  grid-template-columns: 1fr auto;
-  /* grid-template-rows: 5px auto 40px 5px; */
   width: 270px;
   height: 65vh;
   padding: 20px 40px;
@@ -15,17 +12,27 @@ const Container = styled.div`
   }
 `;
 
+const Header = styled.div`
+  display: grid;
+  grid-template-columns: 1fr auto;
+  margin-bottom: 15px;
+`;
+
 const Content = styled.div`
+  display: grid;
   overflow: auto;
   height: 52vh;
+  padding-right: 20px;
 `;
 
 export default function Preparation() {
   return (
     <>
       <Container>
-        <p>Preparation</p>
-        <span>Tag 0</span>
+        <Header>
+          <p>Die Vorbereitung</p>
+          <span>Tag 0</span>
+        </Header>
         <Content>
           <span>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum,

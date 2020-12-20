@@ -19,12 +19,13 @@ const Title = styled.h2`
   top: 10%;
   display: grid;
   place-self: right;
+  z-index: 2;
 `;
 
 export const CalendarPage = () => {
   return (
     <Container>
-      <Title>Kalender</Title>
+      <Title>Daily</Title>
       <DailyCardSlider />
       <Navigation activePath="/calendar" />
     </Container>
