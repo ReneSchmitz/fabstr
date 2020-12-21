@@ -14,7 +14,7 @@ const Container = styled.div`
   li {
     list-style-type: none;
     margin: 0px;
-    padding: 5px 0;
+    padding: 0.8em 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
