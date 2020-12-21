@@ -3,7 +3,7 @@ import styled from "styled-components";
 import { getFruits, getDrinks, getVegetables, getCereals } from "../utils/api";
 import GetCheckBox from "./Checkbox";
 
-const List = styled.div`
+const Container = styled.div`
   position: fixed;
   top: 20%;
   text-decoration: none;
@@ -13,8 +13,11 @@ const List = styled.div`
   }
   li {
     list-style-type: none;
-    margin: 0;
-    padding: 0;
+    margin: 0px;
+    padding: 5px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
 `;
 
@@ -57,14 +60,15 @@ export default function GroceriesList() {
   }, []);
 
   return (
-    <List>
+    <Container>
       <ul>
         <h2>Obst</h2>
         <hr />
         {getFruit &&
           getFruit.map((foodItem) => (
             <li key={foodItem.type}>
-              {foodItem.name} <GetCheckBox />
+              {foodItem.name}
+              <GetCheckBox />
             </li>
           ))}
         <br />
@@ -99,6 +103,6 @@ export default function GroceriesList() {
             </li>
           ))}
       </ul>
-    </List>
+    </Container>
   );
 }
