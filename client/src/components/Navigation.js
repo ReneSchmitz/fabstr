@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import { ReactComponent as Home } from "../assets/icon/home.svg";
 import { ReactComponent as List } from "../assets/icon/list.svg";
 import { ReactComponent as Calendar } from "../assets/icon/calendar.svg";
-import { ReactComponent as Info } from "../assets/icon/info.svg";
+import { ReactComponent as Active } from "../assets/icon/info.svg";
 
 const Footer = styled.footer`
   position: fixed;
@@ -15,7 +15,7 @@ const Footer = styled.footer`
   display: flex;
   justify-content: space-around;
   align-items: center;
-  min-height: 10vh;
+  min-height: 11vh;
   background-color: #ffffff;
   border-radius: 30px 30px 0px 0px;
   box-shadow: 0px -3px 20px #0d569f29;
@@ -34,13 +34,13 @@ const NavItem = styled.li`
 `;
 const Icon = css`
   fill: ${(props) => (props.active ? "#F2C384" : "#808080")};
-  padding: ${(props) => (props.active ? "-20px" : "0px")};
+  padding: ${(props) => (props.active ? "10px" : "14px")};
   background-image: ${(props) =>
     props.active
       ? "linear-gradient(120deg, #fafafa 0%, #eff2f8 100%)"
       : "none"};
+  transform: ${(props) => (props.active ? "scale(1.1)" : "none")};
   box-sizing: border-box;
-  padding: 13px;
   border-radius: 50%;
 `;
 const HomeIcon = styled(Home)`
@@ -55,7 +55,7 @@ const CalendarIcon = styled(Calendar)`
   ${Icon}
 `;
 
-const MoodIcon = styled(Info)`
+const ActivIcon = styled(Active)`
   ${Icon}
 `;
 
@@ -79,8 +79,8 @@ export default function Navigation({ activePath }) {
           </Link>
         </NavItem>
         <NavItem>
-          <Link to="/mood">
-            <MoodIcon active={activePath === "/mood"} />
+          <Link to="/activity">
+            <ActivIcon active={activePath === "/activity"} />
           </Link>
         </NavItem>
       </Nav>

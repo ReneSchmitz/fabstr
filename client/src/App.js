@@ -29,7 +29,7 @@ function App() {
         <Route exact path="/calendar">
           <CalendarPage />
         </Route>
-        <Route exact path="/mood">
+        <Route exact path="/activity">
           <ActivityPage />
         </Route>
         <Route exact path="/mood/:mood">

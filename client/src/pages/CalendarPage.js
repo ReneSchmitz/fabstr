@@ -1,5 +1,5 @@
 import styled from "styled-components/macro";
-import CustomCalendar from "../components/CustomCalendar";
+import DailyCardSlider from "../components/DailyCardSlider";
 import Navigation from "../components/Navigation";
 
 const Container = styled.div`
@@ -16,16 +16,17 @@ const Container = styled.div`
 const Title = styled.h2`
   font-size: 2em;
   position: fixed;
-  top: 10%;
+  top: 9%;
   display: grid;
-  place-self: right;
+  left: 2.4em;
+  z-index: 2;
 `;
 
 export const CalendarPage = () => {
   return (
     <Container>
-      <Title>Kalender</Title>
-      <CustomCalendar />
+      <Title>Daily</Title>
+      <DailyCardSlider />
       <Navigation activePath="/calendar" />
     </Container>
   );
