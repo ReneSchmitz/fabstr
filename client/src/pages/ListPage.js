@@ -13,8 +13,13 @@ const Container = styled.div`
   background: #eff2f8;
 `;
 
-const Title = styled.h1`
-  font-size: 3.5rem;
+const Title = styled.h2`
+  font-size: 2em;
+  position: fixed;
+  top: 9%;
+  display: grid;
+  left: 2.4em;
+  z-index: 2;
 `;
 
 export const ListPage = () => {

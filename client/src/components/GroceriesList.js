@@ -1,6 +1,22 @@
 import { useEffect, useState } from "react";
+import styled from "styled-components";
 import { getFruits, getDrinks, getVegetables, getCereals } from "../utils/api";
 import GetCheckBox from "./Checkbox";
+
+const List = styled.div`
+  position: fixed;
+  top: 20%;
+  text-decoration: none;
+  width: 70%;
+  @media (min-device-width: 450px) {
+    width: 50%;
+  }
+  li {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+`;
 
 export default function GroceriesList() {
   const [getFruit, setFruit] = useState(null);
@@ -41,9 +57,10 @@ export default function GroceriesList() {
   }, []);
 
   return (
-    <>
+    <List>
       <ul>
         <h2>Obst</h2>
+        <hr />
         {getFruit &&
           getFruit.map((foodItem) => (
             <li key={foodItem.type}>
@@ -52,6 +69,7 @@ export default function GroceriesList() {
           ))}
         <br />
         <h2>Getränke</h2>
+        <hr />
         {getDrink &&
           getDrink.map((foodItem) => (
             <li key={foodItem.type}>
@@ -62,6 +80,7 @@ export default function GroceriesList() {
 
         <br />
         <h2>Gemüse</h2>
+        <hr />
         {getVegetable &&
           getVegetable.map((foodItem) => (
             <li key={foodItem.type}>
@@ -71,6 +90,7 @@ export default function GroceriesList() {
           ))}
         <br />
         <h2>Getreide</h2>
+        <hr />
         {getCereal &&
           getCereal.map((foodItem) => (
             <li key={foodItem.type}>
@@ -79,6 +99,6 @@ export default function GroceriesList() {
             </li>
           ))}
       </ul>
-    </>
+    </List>
   );
 }
