@@ -11,6 +11,9 @@ const Container = styled.div`
   padding: 0;
   height: 100vh;
   background: #eff2f8;
+  div::-webkit-scrollbar {
+    display: none;
+  }
 `;
 
 const Title = styled.h2`

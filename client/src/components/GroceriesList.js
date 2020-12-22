@@ -4,8 +4,9 @@ import { getFruits, getDrinks, getVegetables, getCereals } from "../utils/api";
 import GetCheckBox from "./Checkbox";
 
 const Container = styled.div`
-  position: fixed;
-  top: 20%;
+  /* position: fixed; */
+  height: 60vh;
+  overflow: scroll;
   text-decoration: none;
   width: 70%;
   @media (min-device-width: 450px) {
