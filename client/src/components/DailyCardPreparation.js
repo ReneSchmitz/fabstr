@@ -6,8 +6,8 @@ const Container = styled.div`
   height: 65vh;
   padding: 20px 40px;
   border-radius: 30px;
-  background: #ffffff;
-  box-shadow: 30px 30px 60px #0d569f29, -10px -10px 70px #ffffff;
+  background: lightgray;
+  box-shadow: 30px 30px 60px #0d569f29, -3px -5px 30px #f5f7fc;
   div::-webkit-scrollbar {
     display: none;
   }
@@ -17,6 +17,10 @@ const Header = styled.div`
   display: grid;
   grid-template-columns: 1fr auto;
   margin-bottom: 15px;
+  color: #ffffff;
+  p {
+    font-weight: 800;
+  }
 `;
 
 const TextContainer = styled.div`
@@ -28,6 +32,7 @@ const TextContainer = styled.div`
 
 const Headline = styled.p`
   padding-bottom: 8px;
+  color: #ffffff;
 `;
 
 const Content = styled.span`
