@@ -2,9 +2,8 @@ import styled, { keyframes } from "styled-components/macro";
 
 const Container = styled.div`
   position: fixed;
-  bottom: 25%;
+  top: 52%;
   display: grid;
-  place-self: center;
 `;
 
 const LeafAnimation = keyframes`
@@ -22,7 +21,7 @@ const Image = styled.div`
   * {
     margin: 0;
     padding: 0;
-    width: 19em;
+    width: 15em;
     box-sizing: border-box;
   }
   body {
