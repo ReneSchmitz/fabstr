@@ -20,6 +20,9 @@ const Container = styled.div`
     justify-content: space-between;
     align-items: center;
   }
+  h2 {
+    font-weight: 800;
+  }
 `;
 
 export default function GroceriesList() {
