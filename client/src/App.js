@@ -8,6 +8,7 @@ import { ListPage } from "./pages/ListPage";
 import { CalendarPage } from "./pages/CalendarPage";
 import { ActivityPage } from "./pages/ActivityPage";
 import { MoodSelector } from "./pages/MoodSelectorPage";
+import LoginScreen from "./pages/Login";
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -21,7 +22,10 @@ function App() {
       <GlobalStyles />
       <Switch>
         <Route exact path="/">
-          {loading ? <LoadingScreen /> : <HomePage />}
+          {loading ? <LoadingScreen /> : <LoginScreen />}
+        </Route>
+        <Route exact path="/home">
+          <HomePage />
         </Route>
         <Route exact path="/list">
           <ListPage />
