@@ -64,8 +64,8 @@ export default function Navigation({ activePath }) {
     <Footer>
       <Nav>
         <NavItem>
-          <Link to="/">
-            <HomeIcon active={activePath === "/"} />
+          <Link to="/home">
+            <HomeIcon active={activePath === "/home"} />
           </Link>
         </NavItem>
         <NavItem>
