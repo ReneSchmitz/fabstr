@@ -8,15 +8,12 @@ const Header = styled.h1`
   font-weight: 400;
   position: fixed;
   top: 25%;
-  display: grid;
-  place-self: left;
 `;
 
 const Text = styled.h2`
   position: fixed;
   top: 39%;
-  display: grid;
-  place-self: left;
+  text-align: center;
 `;
 
 const Container = styled.div`

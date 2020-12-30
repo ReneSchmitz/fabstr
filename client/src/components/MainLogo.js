@@ -4,13 +4,18 @@ import logo from "../assets/icon/fabstr.png";
 
 const Container = styled.div`
   position: fixed;
-  top: 0;
-  padding-top: 2em;
+  top: 7%;
+  padding: 0 1em;
   box-sizing: border-box;
+  display: center;
+  @media (max-device-height: 800px) {
+    top: 0%;
+    transform: scale(0.7);
+  }
 `;
 
 const Logo = styled.img`
-  width: 175px;
+  width: 180px;
   display: grid;
   grid-area: image;
 `;
