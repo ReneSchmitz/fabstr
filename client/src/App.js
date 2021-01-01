@@ -10,6 +10,8 @@ import { ActivityPage } from "./pages/ActivityPage";
 import { MoodSelector } from "./pages/MoodSelectorPage";
 import LoginScreen from "./pages/Login";
 
+import { AuthProvider } from "./context/context";
+
 function App() {
   const [loading, setLoading] = useState(true);
 
@@ -18,29 +20,31 @@ function App() {
   }, []);
 
   return (
-    <Router>
-      <GlobalStyles />
-      <Switch>
-        <Route exact path="/">
-          {loading ? <LoadingScreen /> : <LoginScreen />}
-        </Route>
-        <Route exact path="/home">
-          <HomePage />
-        </Route>
-        <Route exact path="/list">
-          <ListPage />
-        </Route>
-        <Route exact path="/calendar">
-          <CalendarPage />
-        </Route>
-        <Route exact path="/activity">
-          <ActivityPage />
-        </Route>
-        <Route exact path="/mood/:mood">
-          <MoodSelector />
-        </Route>
-      </Switch>
-    </Router>
+    <AuthProvider>
+      <Router>
+        <GlobalStyles />
+        <Switch>
+          <Route exact path="/">
+            {loading ? <LoadingScreen /> : <LoginScreen />}
+          </Route>
+          <Route exact path="/home">
+            <HomePage />
+          </Route>
+          <Route exact path="/list">
+            <ListPage />
+          </Route>
+          <Route exact path="/calendar">
+            <CalendarPage />
+          </Route>
+          <Route exact path="/activity">
+            <ActivityPage />
+          </Route>
+          <Route exact path="/mood/:mood">
+            <MoodSelector />
+          </Route>
+        </Switch>
+      </Router>
+    </AuthProvider>
   );
 }
 
