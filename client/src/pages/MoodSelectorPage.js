@@ -40,7 +40,7 @@ export const MoodSelector = () => {
       {mood === "sad" && <Sadness />}
       {mood !== "sad" && mood !== "happy" && <>unknown mood</>}
 
-      <Navigation activePath="/" />
+      <Navigation activePath="/home" />
     </Container>
   );
 };

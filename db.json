@@ -8,10 +8,18 @@
       "yearOfBirth": 2000,
       "location": "Köln",
       "fastingDays": 8,
-      "healthStatus": [{ "positiv": 1, "negativ": 1 }],
+      "healthStatus": [
+        {
+          "positiv": 1,
+          "negativ": 1
+        }
+      ],
       "timelog": "46h",
       "screentime": "10min",
-      "activities": ["meditation", "Yoga"]
+      "activities": [
+        "meditation",
+        "Yoga"
+      ]
     },
     {
       "id": 2,
@@ -21,10 +29,18 @@
       "yearOfBirth": 1993,
       "location": "Düsseldorf",
       "fastingDays": 10,
-      "healthStatus": [{ "positiv": 3, "negativ": 1 }],
+      "healthStatus": [
+        {
+          "positiv": 3,
+          "negativ": 1
+        }
+      ],
       "timelog": "46h",
       "screentime": "10min",
-      "activities": ["Yoga", "Jogging"]
+      "activities": [
+        "Yoga",
+        "Jogging"
+      ]
     },
     {
       "id": 3,
@@ -34,10 +50,83 @@
       "yearOfBirth": 1990,
       "location": "Köln",
       "fastingDays": 9,
-      "healthStatus": [{ "positiv": 12, "negativ": 2 }],
+      "healthStatus": [
+        {
+          "positiv": 12,
+          "negativ": 2
+        }
+      ],
       "timelog": "46h",
       "screentime": "10min",
       "activities": ""
+    },
+    {
+      "id": 4
+    },
+    {
+      "mail": "",
+      "password": "",
+      "id": 5
+    },
+    {
+      "mail": "",
+      "password": "",
+      "id": 6
+    },
+    {
+      "mail": "",
+      "password": "",
+      "id": 7
+    },
+    {
+      "mail": "",
+      "password": "",
+      "id": 8
+    },
+    {
+      "mail": "",
+      "password": "",
+      "id": 9
+    },
+    {
+      "mail": "",
+      "password": "",
+      "id": 10
+    },
+    {
+      "mail": "",
+      "password": "",
+      "id": 11
+    },
+    {
+      "mail": "",
+      "password": "",
+      "id": 12
+    },
+    {
+      "mail": "",
+      "password": "",
+      "id": 13
+    },
+    {
+      "mail": "daniel@mail.de",
+      "password": "",
+      "id": 14
+    },
+    {
+      "mail": "",
+      "password": "",
+      "id": 15
+    },
+    {
+      "mail": "",
+      "password": "",
+      "id": 16
+    },
+    {
+      "mail": "daniel@mail.de",
+      "password": "",
+      "id": 17
     }
   ],
   "messages": [

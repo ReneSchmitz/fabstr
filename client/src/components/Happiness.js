@@ -39,7 +39,7 @@ export default function HappyComp() {
       <Header>{happyText}</Header>
       <Text>{happyDaily}</Text>
       <Container>
-        <Link to="/">
+        <Link to="/home">
           <Happiness src={smile} alt="happy" />
           <Sadness src={sad} alt="sad" />
         </Link>

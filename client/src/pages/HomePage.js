@@ -34,7 +34,7 @@ export const HomePage = () => {
     <Container>
       <ProfileButton src={button} alt="profil button" />
       <Mood />
-      <Navigation activePath="/" />
+      <Navigation activePath="/home" />
     </Container>
   );
 };
