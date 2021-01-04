@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import { useState } from "react";
-import { useHistory } from "react-router-dom";
+import { Link, useHistory } from "react-router-dom";
 import { useAuthDispatch, useAuthState } from "../context/context";
 import { loginUser } from "../context/actions";
 import LoginButton from "../components/LoginButton";
@@ -18,7 +18,7 @@ const Input = styled.div`
     "header header "
     "image main "
     "footer footer";
-  padding: 20px 40px;
+  padding: 15px 40px;
   border-radius: 30px;
   background: #ffffff;
   box-shadow: 30px 30px 60px #0d569f29, -10px -10px 70px #ffffff;
@@ -78,13 +78,24 @@ const Container = styled.div`
 const LoginContainer = styled.form`
   position: fixed;
   display: flex;
-  height: 45vh;
+  height: 22.5em;
   flex-direction: column;
   justify-content: space-between;
-  top: 45%;
-  /* @media (max-device-height: 800px) {
+  top: 43%;
+  @media (max-device-height: 800px) {
+    top: 34%;
     transform: scale(0.7);
-  } */
+  }
+`;
+
+const Links = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 10px 7px 0;
+  a {
+    text-decoration: none;
+  }
 `;
 
 function LoginScreen() {
@@ -93,7 +104,7 @@ function LoginScreen() {
   const history = useHistory();
 
   const dispatch = useAuthDispatch();
-  const { loading, errorMessage } = useAuthState();
+  const { loading } = useAuthState();
 
   const handleSubmit = async (event) => {
     event.preventDefault();
@@ -138,6 +149,14 @@ function LoginScreen() {
             />
           </Input>
           <LoginButton type="submit" value="Submit" />
+          <Links>
+            <Link to="/home">
+              <p>Signup</p>
+            </Link>
+            <Link to="/home">
+              <p>Forgot Password?</p>
+            </Link>
+          </Links>
         </LoginContainer>
       </Container>
     </>
