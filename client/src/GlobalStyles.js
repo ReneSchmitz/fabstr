@@ -48,6 +48,7 @@ const GlobalStyle = createGlobalStyle`
         color: #808080;
 
         }
+    a,    
     p {
         font-family: 'Roboto', sans-serif;
         font-weight: 400;

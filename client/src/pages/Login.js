@@ -150,12 +150,8 @@ function LoginScreen() {
           </Input>
           <LoginButton type="submit" value="Submit" />
           <Links>
-            <Link to="/home">
-              <p>Signup</p>
-            </Link>
-            <Link to="/home">
-              <p>Forgot Password?</p>
-            </Link>
+            <Link to="/home">Signup</Link>
+            <Link to="/home">Forgot Password?</Link>
           </Links>
         </LoginContainer>
       </Container>
