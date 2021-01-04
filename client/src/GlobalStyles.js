@@ -11,7 +11,7 @@ const GlobalStyle = createGlobalStyle`
     }
     ::placeholder {
         color: #202020;
-        font-size: 1.3em;
+        font-size: 1em;
     }
 
     :root {
@@ -20,7 +20,7 @@ const GlobalStyle = createGlobalStyle`
     body {
         font-family: 'Roboto', sans-serif;
         font-weight: 400;
-        font-size: 16px;
+        font-size: 1em;
         color: #202020;
         margin: 0;
         text-rendering: optimizeLegibility !important;
@@ -48,6 +48,13 @@ const GlobalStyle = createGlobalStyle`
         color: #808080;
 
         }
+    p {
+        font-family: 'Roboto', sans-serif;
+        font-weight: 400;
+        font-size: 1em;
+        color: #808080;
+ 
+    }    
     
     button,
     input {

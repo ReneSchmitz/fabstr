@@ -18,14 +18,13 @@ const Input = styled.div`
     "header header "
     "image main "
     "footer footer";
-  width: 450px;
   padding: 20px 40px;
   border-radius: 30px;
   background: #ffffff;
   box-shadow: 30px 30px 60px #0d569f29, -10px -10px 70px #ffffff;
 `;
 
-const HeaderFour = styled.h4`
+const Header = styled.p`
   grid-area: header;
   align-self: end;
   padding: 10px 0px 5px 0px;
@@ -48,6 +47,7 @@ const MailInput = styled.input`
   border: none;
   cursor: pointer;
   font-weight: 400;
+  overflow: auto;
 `;
 
 const PwdInput = styled.input`
@@ -60,6 +60,7 @@ const PwdInput = styled.input`
   border: none;
   cursor: pointer;
   font-weight: 400;
+  overflow: auto;
 `;
 
 const Container = styled.div`
@@ -112,7 +113,7 @@ function LoginScreen() {
         <SecondLogo />
         <LoginContainer onSubmit={handleSubmit}>
           <Input>
-            <HeaderFour>Email Address</HeaderFour>
+            <Header>Email Address</Header>
             <Icon src={Mail} alt="mail" />
 
             <MailInput
@@ -124,13 +125,13 @@ function LoginScreen() {
             />
           </Input>
           <Input>
-            <HeaderFour>Password</HeaderFour>
+            <Header>Password</Header>
 
             <Icon src={Lock} alt="lock" />
 
             <PwdInput
               type="password"
-              placeholder="*************"
+              placeholder="⋆⋆⋆⋆⋆⋆⋆⋆⋆⋆⋆⋆⋆"
               value={password}
               onChange={(event) => setPassword(event.target.value)}
               disabled={loading}

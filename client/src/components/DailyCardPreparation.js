@@ -18,7 +18,7 @@ const Header = styled.div`
   grid-template-columns: 1fr auto;
   margin-bottom: 15px;
   color: #ffffff;
-  p {
+  span {
     font-weight: 800;
   }
 `;
@@ -30,7 +30,7 @@ const TextContainer = styled.div`
   padding-right: 20px;
 `;
 
-const Headline = styled.p`
+const Headline = styled.span`
   padding-bottom: 8px;
   color: #ffffff;
 `;
@@ -49,7 +49,7 @@ export default function Preparation() {
     <>
       <Container>
         <Header>
-          <p>Die Vorbereitung</p>
+          <span>Die Vorbereitung</span>
           <span>Tag 0</span>
         </Header>
         <TextContainer>
