@@ -4,6 +4,9 @@ const Container = styled.div`
   position: fixed;
   top: 52%;
   display: grid;
+  @media (max-device-height: 800px) {
+    transform: scale(0.8);
+  }
 `;
 
 const LeafAnimation = keyframes`
@@ -24,6 +27,7 @@ const Image = styled.div`
     width: 15em;
     box-sizing: border-box;
   }
+
   body {
     text-align: center;
   }

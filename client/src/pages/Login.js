@@ -74,7 +74,17 @@ const Container = styled.div`
   height: 100vh;
   background: #eff2f8;
 `;
-const LoginContainer = styled.form``;
+const LoginContainer = styled.form`
+  position: fixed;
+  display: flex;
+  height: 45vh;
+  flex-direction: column;
+  justify-content: space-between;
+  top: 45%;
+  /* @media (max-device-height: 800px) {
+    transform: scale(0.7);
+  } */
+`;
 
 function LoginScreen() {
   const [mail, setMail] = useState("");
@@ -97,38 +107,39 @@ function LoginScreen() {
   };
 
   return (
-    <Container>
-      <SecondLogo />
-      <LoginContainer onSubmit={handleSubmit}>
-        <Input>
-          <HeaderFour>Email Address</HeaderFour>
-          <Icon src={Mail} alt="mail" />
+    <>
+      <Container>
+        <SecondLogo />
+        <LoginContainer onSubmit={handleSubmit}>
+          <Input>
+            <HeaderFour>Email Address</HeaderFour>
+            <Icon src={Mail} alt="mail" />
 
-          <MailInput
-            type="email"
-            placeholder="Username@gmail.com"
-            value={mail}
-            onChange={(event) => setMail(event.target.value)}
-            disabled={loading}
-          />
-        </Input>
-        <Input>
-          <HeaderFour>Password</HeaderFour>
+            <MailInput
+              type="email"
+              placeholder="Username@gmail.com"
+              value={mail}
+              onChange={(event) => setMail(event.target.value)}
+              disabled={loading}
+            />
+          </Input>
+          <Input>
+            <HeaderFour>Password</HeaderFour>
 
-          <Icon src={Lock} alt="lock" />
+            <Icon src={Lock} alt="lock" />
 
-          <PwdInput
-            type="password"
-            placeholder="*************"
-            value={password}
-            onChange={(event) => setPassword(event.target.value)}
-            disabled={loading}
-          />
-        </Input>
-        <LoginButton type="submit" value="Submit" />
-        {errorMessage && <p>{JSON.stringify(errorMessage)}</p>}
-      </LoginContainer>
-    </Container>
+            <PwdInput
+              type="password"
+              placeholder="*************"
+              value={password}
+              onChange={(event) => setPassword(event.target.value)}
+              disabled={loading}
+            />
+          </Input>
+          <LoginButton type="submit" value="Submit" />
+        </LoginContainer>
+      </Container>
+    </>
   );
 }
 
