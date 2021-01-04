@@ -79,6 +79,7 @@ const LoginContainer = styled.form`
   position: fixed;
   display: flex;
   height: 22.5em;
+  width: 90%;
   flex-direction: column;
   justify-content: space-between;
   top: 43%;
