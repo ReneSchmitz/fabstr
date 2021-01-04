@@ -82,7 +82,15 @@ const LoginContainer = styled.form`
   width: 95%;
   flex-direction: column;
   justify-content: space-between;
-  top: 43%;
+  @media (min-device-height: 1000px) {
+    top: 43%;
+    width: 50%;
+  }
+
+  @media (min-device-height: 800px) {
+    top: 43%;
+    transform: scale(0.9);
+  }
   @media (max-device-height: 800px) {
     top: 36%;
     transform: scale(0.8);
