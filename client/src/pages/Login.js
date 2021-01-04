@@ -83,6 +83,11 @@ const LoginContainer = styled.form`
   justify-content: space-between;
   top: 43%;
   @media (max-device-height: 800px) {
+    top: 36%;
+    transform: scale(0.9);
+  }
+
+  @media (max-device-height: 660px) {
     top: 34%;
     transform: scale(0.7);
   }
