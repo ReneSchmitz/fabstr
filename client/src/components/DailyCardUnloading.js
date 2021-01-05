@@ -2,7 +2,7 @@ import styled from "styled-components/macro";
 
 const Container = styled.div`
   width: 270px;
-  height: 65vh;
+  height: 60vh;
   padding: 20px 40px;
   border-radius: 30px;
   background: #e7b0ed;
@@ -25,7 +25,7 @@ const Header = styled.div`
 const TextContainer = styled.div`
   display: grid;
   overflow: auto;
-  height: 52vh;
+  height: 45vh;
   padding-right: 20px;
 `;
 
