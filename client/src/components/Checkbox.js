@@ -9,8 +9,8 @@ export default function GetCheckBox() {
 
   return (
     <img
-      Src={CheckboxSrc}
-      Alt={CheckboxAlt}
+      src={CheckboxSrc}
+      alt={CheckboxAlt}
       onClick={() => setIsChecked(!isChecked)}
     />
   );

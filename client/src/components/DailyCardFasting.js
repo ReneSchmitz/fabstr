@@ -2,7 +2,7 @@ import styled from "styled-components/macro";
 
 const Container = styled.div`
   width: 270px;
-  height: 65vh;
+  height: 63vh;
   padding: 20px 40px;
   border-radius: 30px;
   background: #98e6b9;
@@ -17,7 +17,7 @@ const Header = styled.div`
   grid-template-columns: 1fr auto;
   margin-bottom: 15px;
   color: #ffffff;
-  p {
+  span {
     font-weight: 800;
   }
 `;
@@ -25,11 +25,11 @@ const Header = styled.div`
 const TextContainer = styled.div`
   display: grid;
   overflow: auto;
-  height: 52vh;
+  height: 49vh;
   padding-right: 20px;
 `;
 
-const Headline = styled.p`
+const Headline = styled.span`
   padding-bottom: 8px;
   color: #ffffff;
 `;
@@ -43,7 +43,7 @@ export default function Preparation() {
     <>
       <Container>
         <Header>
-          <p>Fastentage</p>
+          <span>Fastentage</span>
           <span>Tag 3-7</span>
         </Header>
         <TextContainer>

@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import { useState } from "react";
-import { useHistory } from "react-router-dom";
+import { Link, useHistory } from "react-router-dom";
 import { useAuthDispatch, useAuthState } from "../context/context";
 import { loginUser } from "../context/actions";
 import LoginButton from "../components/LoginButton";
@@ -18,14 +18,13 @@ const Input = styled.div`
     "header header "
     "image main "
     "footer footer";
-  width: 450px;
-  padding: 20px 40px;
+  padding: 15px 40px;
   border-radius: 30px;
   background: #ffffff;
   box-shadow: 30px 30px 60px #0d569f29, -10px -10px 70px #ffffff;
 `;
 
-const HeaderFour = styled.h4`
+const Header = styled.p`
   grid-area: header;
   align-self: end;
   padding: 10px 0px 5px 0px;
@@ -48,6 +47,7 @@ const MailInput = styled.input`
   border: none;
   cursor: pointer;
   font-weight: 400;
+  overflow: auto;
 `;
 
 const PwdInput = styled.input`
@@ -60,6 +60,7 @@ const PwdInput = styled.input`
   border: none;
   cursor: pointer;
   font-weight: 400;
+  overflow: auto;
 `;
 
 const Container = styled.div`
@@ -74,7 +75,42 @@ const Container = styled.div`
   height: 100vh;
   background: #eff2f8;
 `;
-const LoginContainer = styled.form``;
+const LoginContainer = styled.form`
+  position: fixed;
+  display: flex;
+  height: 22.5em;
+  width: 95%;
+  flex-direction: column;
+  justify-content: space-between;
+  @media (min-device-height: 1000px) {
+    top: 43%;
+    width: 50%;
+  }
+
+  @media (min-device-height: 800px) {
+    top: 43%;
+    transform: scale(0.9);
+  }
+  @media (max-device-height: 800px) {
+    top: 36%;
+    transform: scale(0.8);
+  }
+
+  @media (max-device-height: 660px) {
+    top: 34%;
+    transform: scale(0.7);
+  }
+`;
+
+const Links = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 10px 7px 0;
+  a {
+    text-decoration: none;
+  }
+`;
 
 function LoginScreen() {
   const [mail, setMail] = useState("");
@@ -82,7 +118,7 @@ function LoginScreen() {
   const history = useHistory();
 
   const dispatch = useAuthDispatch();
-  const { loading, errorMessage } = useAuthState();
+  const { loading } = useAuthState();
 
   const handleSubmit = async (event) => {
     event.preventDefault();
@@ -97,38 +133,43 @@ function LoginScreen() {
   };
 
   return (
-    <Container>
-      <SecondLogo />
-      <LoginContainer onSubmit={handleSubmit}>
-        <Input>
-          <HeaderFour>Email Address</HeaderFour>
-          <Icon src={Mail} alt="mail" />
+    <>
+      <Container>
+        <SecondLogo />
+        <LoginContainer onSubmit={handleSubmit}>
+          <Input>
+            <Header>Email Address</Header>
+            <Icon src={Mail} alt="mail" />
 
-          <MailInput
-            type="email"
-            placeholder="Username@gmail.com"
-            value={mail}
-            onChange={(event) => setMail(event.target.value)}
-            disabled={loading}
-          />
-        </Input>
-        <Input>
-          <HeaderFour>Password</HeaderFour>
+            <MailInput
+              type="email"
+              placeholder="Username@gmail.com"
+              value={mail}
+              onChange={(event) => setMail(event.target.value)}
+              disabled={loading}
+            />
+          </Input>
+          <Input>
+            <Header>Password</Header>
 
-          <Icon src={Lock} alt="lock" />
+            <Icon src={Lock} alt="lock" />
 
-          <PwdInput
-            type="password"
-            placeholder="*************"
-            value={password}
-            onChange={(event) => setPassword(event.target.value)}
-            disabled={loading}
-          />
-        </Input>
-        <LoginButton type="submit" value="Submit" />
-        {errorMessage && <p>{JSON.stringify(errorMessage)}</p>}
-      </LoginContainer>
-    </Container>
+            <PwdInput
+              type="password"
+              placeholder="⋆⋆⋆⋆⋆⋆⋆⋆⋆⋆⋆⋆⋆"
+              value={password}
+              onChange={(event) => setPassword(event.target.value)}
+              disabled={loading}
+            />
+          </Input>
+          <LoginButton type="submit" value="Submit" />
+          <Links>
+            <Link to="/home">Signup</Link>
+            <Link to="/home">Forgot Password?</Link>
+          </Links>
+        </LoginContainer>
+      </Container>
+    </>
   );
 }
 
