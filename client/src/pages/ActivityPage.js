@@ -5,6 +5,7 @@ import quote from "../assets/icon/quoteRight.svg";
 import Navigation from "../components/Navigation";
 
 const Container = styled.div`
+  position: fixed;
   display: flex;
   flex-direction: column;
   align-items: center;
