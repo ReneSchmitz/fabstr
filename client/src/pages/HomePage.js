@@ -11,7 +11,6 @@ const Container = styled.div`
   margin: 0;
   padding: 0;
   height: 100vh;
-  background: #eff2f8;
 `;
 
 const ProfileButton = styled.img`
