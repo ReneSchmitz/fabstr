@@ -20,6 +20,7 @@ const Frame = styled.div`
   opacity: 0.6;
   position: fixed;
   top: 0;
+  left: 0;
   max-height: 30%;
   overflow: hidden;
   z-index: 1;
@@ -35,7 +36,7 @@ const Quote = styled.div`
   grid-template-columns: 1fr auto;
   grid-template-rows: 40px auto;
   width: 80%;
-  position: relative;
+  position: fixed;
   top: 34%;
   span {
     font-family: "Bodoni 72", serif;
