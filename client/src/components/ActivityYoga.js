@@ -33,11 +33,14 @@ const Body = styled.div`
       top: -10%;
       transform: scale(1.2);
     }
-
+    @media (max-device-height: 800px) {
+      position: relative;
+      transform: scale(0.9);
+    }
     @media (max-device-height: 660px) {
       position: relative;
       top: 10%;
-      transform: scale(0.8);
+      transform: scale(0.7);
     }
   }
   span {
