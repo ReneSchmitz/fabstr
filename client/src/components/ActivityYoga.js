@@ -35,6 +35,7 @@ const Body = styled.div`
     }
     @media (max-device-height: 800px) {
       position: relative;
+      top: -10%;
       transform: scale(0.9);
     }
     @media (max-device-height: 660px) {
@@ -44,7 +45,6 @@ const Body = styled.div`
     }
   }
   span {
-    position: relative;
     margin-top: 15px;
     color: #202020;
     font-weight: 800;
