@@ -1,5 +1,5 @@
 import styled from "styled-components/macro";
-import logo from "../assets/icon/fabstr.png";
+import ActivitySlider from "../components/ActivitySlider";
 import image from "../assets/img/oceanTwo.jpg";
 import quote from "../assets/icon/quoteRight.svg";
 import Navigation from "../components/Navigation";
@@ -7,12 +7,14 @@ import Navigation from "../components/Navigation";
 const Container = styled.div`
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
   margin: 0;
   padding: 0;
   height: 100vh;
   background: #eff2f8;
+  div:last-child {
+    top: 44.5%;
+  }
 `;
 
 const Frame = styled.div`
@@ -31,31 +33,16 @@ const Frame = styled.div`
 
 const Quote = styled.div`
   display: grid;
+  grid-template-columns: 1fr auto;
+  grid-template-rows: 40px auto;
   width: 80%;
-  img {
-    position: relative;
-    top: -30px;
-    display: flex;
-    justify-content: flex-end;
-  }
-  p {
-    margin-bottom: 5%;
-  }
+  position: relative;
+  top: 34%;
   span {
     font-family: "Bodoni 72", serif;
     font-weight: 800;
-    font-size: 1.5em;
+    font-size: 1.3em;
   }
-`;
-
-const Logo = styled.img`
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin: 0;
-  padding: 0;
-  width: 40%;
 `;
 
 const Title = styled.h2`
@@ -80,12 +67,9 @@ export const ActivityPage = () => {
       <Quote>
         <p>Today&lsquo;s insiration</p>
         <img src={quote} alt="quote" />
-        <span>
-          Nothing behind me, <br />
-          everything ahead of me.
-        </span>
+        <span>Nothing behind me, everything ahead of me.</span>
       </Quote>
-      <Logo src={logo} alt="logo" />
+      <ActivitySlider />
       <Navigation activePath="/activity" />
     </Container>
   );
