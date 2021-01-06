@@ -13,6 +13,7 @@ const Container = styled(Link)`
   background: #ffffff;
   opacity: 0.8;
   box-shadow: 30px 30px 60px #0d569f29, -3px -5px 30px #f5f7fc;
+  overflow: hidden;
   div::-webkit-scrollbar {
     display: none;
   }
@@ -20,11 +21,24 @@ const Container = styled(Link)`
 
 const Body = styled.div`
   margin-bottom: 5px;
+  height: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
   img {
+    object-fit: contain;
     width: 100%;
+    @media (min-device-height: 800px) {
+      position: relative;
+      top: -10%;
+      transform: scale(1.2);
+    }
+
+    @media (max-device-height: 660px) {
+      position: relative;
+      top: 10%;
+      transform: scale(0.8);
+    }
   }
   span {
     margin-top: 15px;
