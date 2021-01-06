@@ -18,7 +18,7 @@ const Container = styled.div`
 `;
 
 const Frame = styled.div`
-  opacity: 0.7;
+  opacity: 0.6;
   position: fixed;
   top: 0;
   max-height: 30%;

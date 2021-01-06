@@ -1,4 +1,5 @@
 import styled from "styled-components/macro";
+import jogging from "../assets/icon/run.svg";
 
 const Container = styled.div`
   display: flex;
@@ -7,7 +8,8 @@ const Container = styled.div`
   height: 31vh;
   padding: 20px 40px;
   border-radius: 30px;
-  background: lightgray;
+  background: #ffffff;
+  opacity: 0.8;
   box-shadow: 30px 30px 60px #0d569f29, -3px -5px 30px #f5f7fc;
   div::-webkit-scrollbar {
     display: none;
@@ -15,11 +17,16 @@ const Container = styled.div`
 `;
 
 const Body = styled.div`
-  margin-bottom: 15px;
-  color: #ffffff;
+  margin-bottom: 5px;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  img {
+    width: 100%;
+  }
   span {
+    margin-top: 15px;
+    color: #202020;
     font-weight: 800;
   }
 `;
@@ -29,6 +36,7 @@ export default function Jogging() {
     <>
       <Container>
         <Body>
+          <img src={jogging} alt="jogger" />
           <span>Joggen</span>
         </Body>
       </Container>
