@@ -6,6 +6,7 @@ import Navigation from "../components/Navigation";
 import { useParams } from "react-router-dom";
 
 const Container = styled.div`
+  position: fixed;
   display: flex;
   flex-direction: column;
   justify-content: center;

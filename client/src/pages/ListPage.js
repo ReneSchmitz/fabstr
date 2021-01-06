@@ -3,6 +3,7 @@ import Navigation from "../components/Navigation";
 import GroceriesList from "../components/GroceriesList";
 
 const Container = styled.div`
+  position: fixed;
   display: flex;
   flex-direction: column;
   justify-content: center;

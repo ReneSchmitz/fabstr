@@ -3,6 +3,7 @@ import MainLogo from "../components/MainLogo";
 import Loading from "../components/Loading";
 
 const Container = styled.div`
+  position: fixed;
   display: flex;
   flex-direction: column;
   justify-content: center;

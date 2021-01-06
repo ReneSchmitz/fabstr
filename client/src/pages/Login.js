@@ -64,6 +64,7 @@ const PwdInput = styled.input`
 `;
 
 const Container = styled.div`
+  position: fixed;
   display: flex;
   flex-direction: column;
   justify-content: center;

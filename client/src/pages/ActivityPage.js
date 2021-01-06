@@ -66,7 +66,7 @@ export const ActivityPage = () => {
         <img src={image} alt="" />
       </Frame>
       <Quote>
-        <p>Today&lsquo;s insiration</p>
+        <p>Today&lsquo;s inspiration</p>
         <img src={quote} alt="quote" />
         <span>Nothing behind me, everything ahead of me.</span>
       </Quote>
