@@ -1,9 +1,11 @@
+import { Link } from "react-router-dom";
 import styled from "styled-components/macro";
 import meditate from "../assets/icon/meditation.svg";
 
-const Container = styled.div`
+const Container = styled(Link)`
   display: flex;
   flex-direction: column-reverse;
+  text-decoration: none;
   width: 200px;
   height: 31vh;
   padding: 20px 40px;
@@ -34,7 +36,7 @@ const Body = styled.div`
 export default function Meditation() {
   return (
     <>
-      <Container>
+      <Container to="/home">
         <Body>
           <img src={meditate} alt="meditating person" />
           <span>Meditation</span>

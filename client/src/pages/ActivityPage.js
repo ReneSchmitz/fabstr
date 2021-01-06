@@ -42,6 +42,8 @@ const Quote = styled.div`
     font-family: "Bodoni 72", serif;
     font-weight: 800;
     font-size: 1.3em;
+    word-spacing: 2px;
+    line-height: 1.1;
   }
 `;
 
