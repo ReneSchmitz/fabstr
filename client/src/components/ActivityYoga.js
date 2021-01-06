@@ -41,6 +41,7 @@ const Body = styled.div`
     }
   }
   span {
+    position: relative;
     margin-top: 15px;
     color: #202020;
     font-weight: 800;
