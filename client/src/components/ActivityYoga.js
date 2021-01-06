@@ -27,21 +27,17 @@ const Body = styled.div`
   align-items: center;
   img {
     object-fit: contain;
-    width: 100%;
+    width: 85%;
     @media (min-device-height: 800px) {
       position: relative;
       top: -10%;
       transform: scale(1.2);
     }
-    @media (max-device-height: 800px) {
-      position: relative;
-      top: -10%;
-      transform: scale(0.9);
-    }
+
     @media (max-device-height: 660px) {
       position: relative;
       top: 10%;
-      transform: scale(0.7);
+      transform: scale(0.8);
     }
   }
   span {
