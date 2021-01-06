@@ -6,7 +6,6 @@ import Navigation from "../components/Navigation";
 import { useParams } from "react-router-dom";
 
 const Container = styled.div`
-  position: fixed;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -14,7 +13,6 @@ const Container = styled.div`
   margin: 0;
   padding: 0;
   height: 100vh;
-  background: #eff2f8;
 `;
 
 const ProfileButton = styled.img`

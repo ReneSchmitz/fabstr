@@ -64,7 +64,6 @@ const PwdInput = styled.input`
 `;
 
 const Container = styled.div`
-  position: fixed;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -74,7 +73,6 @@ const Container = styled.div`
   margin: 0;
   padding: 0;
   height: 100vh;
-  background: #eff2f8;
 `;
 const LoginContainer = styled.form`
   position: fixed;

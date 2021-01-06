@@ -15,6 +15,8 @@ const GlobalStyle = createGlobalStyle`
     }
 
     :root {
+        background: #eff2f8;
+
     }
     
     body {

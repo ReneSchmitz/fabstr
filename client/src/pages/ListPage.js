@@ -3,7 +3,6 @@ import Navigation from "../components/Navigation";
 import GroceriesList from "../components/GroceriesList";
 
 const Container = styled.div`
-  position: fixed;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -11,7 +10,6 @@ const Container = styled.div`
   margin: 0;
   padding: 0;
   height: 100vh;
-  background: #eff2f8;
   div::-webkit-scrollbar {
     display: none;
   }

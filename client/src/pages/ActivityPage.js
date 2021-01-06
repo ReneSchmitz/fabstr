@@ -5,14 +5,12 @@ import quote from "../assets/icon/quoteRight.svg";
 import Navigation from "../components/Navigation";
 
 const Container = styled.div`
-  position: fixed;
   display: flex;
   flex-direction: column;
   align-items: center;
   margin: 0;
   padding: 0;
   height: 100vh;
-  background: #eff2f8;
   div:last-child {
     top: 44.5%;
   }
