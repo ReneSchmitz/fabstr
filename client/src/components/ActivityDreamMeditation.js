@@ -42,8 +42,8 @@ const Body = styled.div`
   }
   span {
     margin-top: 15px;
-    color: #202020;
-    font-weight: 800;
+    color: #808080;
+    font-weight: 400;
   }
 `;
 
