@@ -9,6 +9,7 @@ import { CalendarPage } from "./pages/CalendarPage";
 import { ActivityPage } from "./pages/ActivityPage";
 import { MoodSelector } from "./pages/MoodSelectorPage";
 import LoginScreen from "./pages/Login";
+import { MeditationPage } from "./pages/MeditationPage";
 
 import { AuthProvider } from "./context/context";
 
@@ -41,6 +42,9 @@ function App() {
           </Route>
           <Route exact path="/mood/:mood">
             <MoodSelector />
+          </Route>
+          <Route exact path="/meditation">
+            <MeditationPage />
           </Route>
         </Switch>
       </Router>

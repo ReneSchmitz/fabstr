@@ -50,7 +50,7 @@ const Body = styled.div`
 export default function Jogging() {
   return (
     <>
-      <Container to="/home">
+      <Container to="/meditation">
         <Body>
           <img src={jogging} alt="jogger" />
           <span>Joggen</span>
