@@ -25,6 +25,46 @@ const Container = styled.div`
   }
 `;
 
+const FramePink = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  width: 100%;
+  background: #e7b0ed;
+  border-radius: 30px;
+`;
+
+const FrameGreen = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  width: 100%;
+  background: #98e6b9;
+  border-radius: 30px;
+`;
+
+const FrameOrange = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  width: 100%;
+  background: #f2c384;
+  border-radius: 30px;
+`;
+
+const FrameGrey = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  width: 100%;
+  background: lightgray;
+  border-radius: 30px;
+`;
+
 export default function GroceriesList() {
   const [getFruit, setFruit] = useState(null);
   const [getDrink, setDrink] = useState(null);
@@ -66,8 +106,9 @@ export default function GroceriesList() {
   return (
     <Container>
       <ul>
-        <h2>Obst</h2>
-        <hr />
+        <FramePink>
+          <h2>Obst</h2>
+        </FramePink>
         {getFruit &&
           getFruit.map((foodItem) => (
             <li key={foodItem.type}>
@@ -76,8 +117,9 @@ export default function GroceriesList() {
             </li>
           ))}
         <br />
-        <h2>Getränke</h2>
-        <hr />
+        <FrameGreen>
+          <h2>Getränke</h2>
+        </FrameGreen>
         {getDrink &&
           getDrink.map((foodItem) => (
             <li key={foodItem.type}>
@@ -87,8 +129,9 @@ export default function GroceriesList() {
           ))}
 
         <br />
-        <h2>Gemüse</h2>
-        <hr />
+        <FrameOrange>
+          <h2>Gemüse</h2>
+        </FrameOrange>
         {getVegetable &&
           getVegetable.map((foodItem) => (
             <li key={foodItem.type}>
@@ -97,8 +140,9 @@ export default function GroceriesList() {
             </li>
           ))}
         <br />
-        <h2>Getreide</h2>
-        <hr />
+        <FrameGrey>
+          <h2>Getreide</h2>
+        </FrameGrey>
         {getCereal &&
           getCereal.map((foodItem) => (
             <li key={foodItem.type}>
