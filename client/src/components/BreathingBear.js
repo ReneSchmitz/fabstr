@@ -12,22 +12,22 @@ const Container = styled.div`
 const HeadAnimation = keyframes`
 from {
    transform: translateY(0%) ;
-   transform-origin: top;
+   transform-origin: bottom;
 }
 to {
-   transform: translateY(-7%) scale(1.2);
-   transform-origin: top;
+   transform: translateY(-3%) scale(1.15);
+   transform-origin: bottom;
 }
 `;
 
 const ArmsAnimation = keyframes`
 from {
    transform: translateY(0%) ;
-   transform-origin: top;
+   transform-origin: bottom;
 }
 to {
-   transform: translateY(-14%) scale(1.155);
-   transform-origin: top;
+   transform: translateY(-3%) scale(1.15);
+   transform-origin: bottom;
 }
 `;
 
