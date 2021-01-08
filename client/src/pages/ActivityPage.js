@@ -1,6 +1,6 @@
 import styled from "styled-components/macro";
 import ActivitySlider from "../components/ActivitySlider";
-import image from "../assets/img/oceanTwo.jpg";
+import activity from "../assets/icon/activity.svg";
 import quote from "../assets/icon/quoteRight.svg";
 import Navigation from "../components/Navigation";
 
@@ -17,17 +17,18 @@ const Container = styled.div`
 `;
 
 const Frame = styled.div`
-  opacity: 0.6;
+  opacity: 0.8;
   position: fixed;
   top: 0;
   left: 0;
-  max-height: 30%;
+  max-height: 27%;
   overflow: hidden;
   z-index: 1;
   img {
     max-width: 100%;
     position: relative;
-    top: -5em;
+    top: -6.5em;
+    left: 4em;
   }
 `;
 
@@ -49,14 +50,12 @@ const Quote = styled.div`
 
 const Title = styled.h2`
   font-size: 2em;
-  font-weight: 800;
+  font-weight: 400;
   position: fixed;
   top: 9%;
   display: grid;
   left: 2.4em;
   z-index: 2;
-  color: #ffffff;
-  text-shadow: 20px 20px 60px #303030, -20px -20px 60px #424040;
 `;
 
 export const ActivityPage = () => {
@@ -64,7 +63,7 @@ export const ActivityPage = () => {
     <Container>
       <Title>Activity</Title>
       <Frame>
-        <img src={image} alt="" />
+        <img src={activity} alt="" />
       </Frame>
       <Quote>
         <p>Today&lsquo;s inspiration</p>
