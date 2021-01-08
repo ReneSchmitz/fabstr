@@ -54,7 +54,7 @@ const Title = styled.h2`
   position: fixed;
   top: 9%;
   display: grid;
-  left: 2.4em;
+  left: 15%;
   z-index: 2;
 `;
 
