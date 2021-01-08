@@ -7,10 +7,11 @@ const Container = styled.div`
   position: relative;
   top: 8%;
   padding: 20px 0;
-  height: 64vh;
+  height: 62vh;
   overflow: scroll;
   text-decoration: none;
   width: 70%;
+  z-index: 1;
   @media (min-device-width: 450px) {
     width: 50%;
   }

@@ -18,14 +18,15 @@ const Container = styled.div`
 `;
 
 const Frame = styled.div`
-  opacity: 0.8;
   position: fixed;
   height: 27vh;
   top: 0;
   left: 0;
   overflow: hidden;
-  z-index: 1;
+  z-index: 2;
+  box-shadow: 10px 10px 60px #0d569f29;
   img {
+    opacity: 0.8;
     max-width: 40%;
     position: relative;
     top: 2.8em;
