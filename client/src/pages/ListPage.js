@@ -1,4 +1,6 @@
 import styled from "styled-components/macro";
+import groceries from "../assets/icon/groceries.svg";
+
 import Navigation from "../components/Navigation";
 import GroceriesList from "../components/GroceriesList";
 
@@ -15,6 +17,22 @@ const Container = styled.div`
   }
 `;
 
+const Frame = styled.div`
+  opacity: 0.8;
+  position: fixed;
+  height: 27vh;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  z-index: 1;
+  img {
+    max-width: 40%;
+    position: relative;
+    top: 2.8em;
+    left: 12em;
+  }
+`;
+
 const Title = styled.h2`
   font-size: 2em;
   position: fixed;
@@ -28,6 +46,10 @@ export const ListPage = () => {
   return (
     <Container>
       <Title>Einkaufsliste</Title>
+      <Frame>
+        <img src={groceries} alt="" />
+      </Frame>
+
       <GroceriesList />
       <Navigation activePath="/list" />
     </Container>

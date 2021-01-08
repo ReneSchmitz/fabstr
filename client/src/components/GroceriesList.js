@@ -4,8 +4,10 @@ import { getFruits, getDrinks, getVegetables, getCereals } from "../utils/api";
 import GetCheckBox from "./Checkbox";
 
 const Container = styled.div`
-  /* position: fixed; */
-  height: 60vh;
+  position: relative;
+  top: 8%;
+  padding: 20px 0;
+  height: 64vh;
   overflow: scroll;
   text-decoration: none;
   width: 70%;
@@ -21,7 +23,9 @@ const Container = styled.div`
     align-items: center;
   }
   h2 {
-    font-weight: 800;
+    font-size: 1.1em;
+    font-weight: 400;
+    color: #ffffff;
   }
 `;
 
