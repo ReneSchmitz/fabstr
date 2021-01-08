@@ -26,7 +26,7 @@ from {
    transform-origin: top;
 }
 to {
-   transform: translateY(-11%) scale(1.155);
+   transform: translateY(-14%) scale(1.155);
    transform-origin: top;
 }
 `;
