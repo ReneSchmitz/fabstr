@@ -48,7 +48,7 @@ export default function Preparation() {
         </Header>
         <TextContainer>
           <Headline>Geschafft!</Headline>
-          <Content>Du hast deine Fastenkur ervolgreich abgeschlossen.</Content>
+          <Content>Du hast deine Fastenkur erfolgreich abgeschlossen.</Content>
           <Headline>Die Zeit danach</Headline>
           <Content>
             Der Grundstein für eine gesündere Zukunft ist gelegt. Also, versuche
