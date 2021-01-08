@@ -1,8 +1,8 @@
 import styled from "styled-components/macro";
 import button from "../assets/icon/profile.svg";
-import BreathingBear from "../components/BreathingBear";
+
 import Navigation from "../components/Navigation";
-import SpeechBubble from "../components/SpeechBubble";
+import SpeechBubbleIntro from "../components/SpeechBubbleIntro";
 
 const Container = styled.div`
   display: flex;
@@ -29,12 +29,11 @@ const ProfileButton = styled.img`
   z-index: 6;
 `;
 
-export const MeditationPage = () => {
+export const MeditationPageIntro = () => {
   return (
     <Container>
       <ProfileButton src={button} alt="profil button" />
-      <BreathingBear />
-      <SpeechBubble />
+      <SpeechBubbleIntro />
       <Navigation activePath="/activity" />
     </Container>
   );

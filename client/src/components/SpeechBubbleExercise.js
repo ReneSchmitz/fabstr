@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import styled from "styled-components/macro";
 
 const Container = styled.div`
@@ -11,8 +12,11 @@ const Container = styled.div`
   align-items: center;
   background: #ffffff;
   opacity: 0.9;
-  justify-content: space-between;
   box-shadow: 30px 30px 60px #0d569f29, -3px -5px 30px #f5f7fc;
+  a {
+    text-decoration: none;
+  }
+
   :after {
     content: "";
     display: block;
@@ -43,14 +47,15 @@ const Body = styled.div`
   }
 `;
 
-export default function SpeakingBubble() {
+export default function SpeechBubbleExercise() {
   return (
     <>
       <Container>
-        <Body>
-          <span>3 sec einatmen…</span>
-          <span>3 sec ausatmen…</span>
-        </Body>
+        <Link to="/meditation/intro">
+          <Body>
+            <span>Atme 3 Sekunden lang tief ein... und aus.</span>
+          </Body>
+        </Link>
       </Container>
     </>
   );

@@ -11,11 +11,11 @@ const Container = styled.div`
 
 const HeadAnimation = keyframes`
 from {
-   transform: translateY(5%) ;
+   transform: translateY(0%) ;
    transform-origin: top;
 }
 to {
-   transform: translateY(-6%) scale(1.2);
+   transform: translateY(-7%) scale(1.2);
    transform-origin: top;
 }
 `;

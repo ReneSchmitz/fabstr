@@ -50,7 +50,7 @@ const Body = styled.div`
 export default function DreamMeditation() {
   return (
     <>
-      <Container to="/meditation">
+      <Container to="/meditation/intro">
         <Body>
           <img src={dream} alt="dream meditate" />
           <span>Traumreise</span>
