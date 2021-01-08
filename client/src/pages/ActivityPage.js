@@ -38,7 +38,7 @@ const Quote = styled.div`
   grid-template-rows: 40px auto;
   width: 80%;
   position: fixed;
-  top: 34%;
+  top: 32%;
   span {
     font-family: "Bodoni 72", serif;
     font-weight: 800;
