@@ -1,33 +1,60 @@
 import styled from "styled-components/macro";
-import smile from "../assets/icon/coloredSmile.svg";
-import sad from "../assets/icon/sad.svg";
+import happy from "../assets/icon/jump.svg";
+import tip from "../assets/icon/tip.svg";
 import { Link } from "react-router-dom";
 
 const Header = styled.h1`
-  font-family: Roboto;
   font-weight: 400;
   position: fixed;
-  top: 25%;
-  display: center;
+  top: 23%;
 `;
 
 const Text = styled.h2`
   position: fixed;
-  top: 39%;
+  top: 37%;
+  width: 90%;
   text-align: center;
 `;
 
 const Container = styled.div`
+  display: flex;
   position: fixed;
-  top: 57%;
+  width: 90vw;
+  justify-content: space-around;
+  top: 47%;
+`;
+
+const CardContainer = styled(Link)`
+  display: grid;
+  grid-template-rows: 25px 25px auto;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  width: 135px;
+  height: 31vh;
+  padding: 15px 20px;
+  border-radius: 30px;
+  background: #ffffff;
+  opacity: 0.8;
+  box-shadow: 30px 30px 60px #0d569f29, -3px -5px 30px #f5f7fc;
+  overflow: hidden;
+  span {
+    position: relative;
+    text-align: center;
+  }
+  div::-webkit-scrollbar {
+    display: none;
+  }
+`;
+
+const Info = styled.img`
+  height: 16px;
+  justify-self: center;
 `;
 
 const Happiness = styled.img`
-  margin-right: 10px;
-`;
-
-const Sadness = styled.img`
-  margin-left: 10px;
+  width: 52px;
+  justify-self: center;
 `;
 
 export default function HappyComp() {
@@ -39,10 +66,11 @@ export default function HappyComp() {
       <Header>{happyText}</Header>
       <Text>{happyDaily}</Text>
       <Container>
-        <Link to="/home">
-          <Happiness src={smile} alt="happy" />
-          <Sadness src={sad} alt="sad" />
-        </Link>
+        <CardContainer to="/home">
+          <Info src={tip} alt="info" />
+          <span>happy</span>
+          <Happiness src={happy} alt="happy" />
+        </CardContainer>
       </Container>
     </>
   );
