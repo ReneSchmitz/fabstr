@@ -1,7 +1,8 @@
 import { useEffect, useState } from "react";
 import styled from "styled-components";
 import { getFruits, getDrinks, getVegetables, getCereals } from "../utils/api";
-import GetCheckBox from "./Checkbox";
+import GetCheckBoxPink from "./CheckboxPink";
+import GetCheckBoxGreen from "./CheckboxGreen";
 
 const Container = styled.div`
   position: relative;
@@ -118,7 +119,7 @@ export default function GroceriesList() {
           getFruit.map((foodItem) => (
             <li key={foodItem.type}>
               {foodItem.name}
-              <GetCheckBox />
+              <GetCheckBoxPink />
             </li>
           ))}
         <br />
@@ -129,7 +130,7 @@ export default function GroceriesList() {
           getDrink.map((foodItem) => (
             <li key={foodItem.type}>
               {foodItem.name}
-              <GetCheckBox />
+              <GetCheckBoxGreen />
             </li>
           ))}
 
@@ -141,7 +142,7 @@ export default function GroceriesList() {
           getVegetable.map((foodItem) => (
             <li key={foodItem.type}>
               {foodItem.name}
-              <GetCheckBox />
+              <GetCheckBoxGreen />
             </li>
           ))}
         <br />
@@ -152,7 +153,7 @@ export default function GroceriesList() {
           getCereal.map((foodItem) => (
             <li key={foodItem.type}>
               {foodItem.name}
-              <GetCheckBox />
+              <GetCheckBoxGreen />
             </li>
           ))}
       </ul>
