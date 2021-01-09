@@ -4,6 +4,7 @@ import { getFruits, getDrinks, getVegetables, getCereals } from "../utils/api";
 import GetCheckBoxPink from "./CheckboxPink";
 import GetCheckBoxGreen from "./CheckboxGreen";
 import GetCheckBoxOrange from "./CheckboxOrange";
+import GetCheckBoxGrey from "./CheckboxGrey";
 
 const Container = styled.div`
   position: relative;
@@ -154,7 +155,7 @@ export default function GroceriesList() {
           getCereal.map((foodItem) => (
             <li key={foodItem.type}>
               {foodItem.name}
-              <GetCheckBoxGreen />
+              <GetCheckBoxGrey />
             </li>
           ))}
       </ul>
