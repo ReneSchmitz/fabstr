@@ -36,6 +36,7 @@ const Title = styled.h2`
   display: grid;
   left: 15%;
   z-index: 2;
+  text-shadow: 6px 6px 6px #0d569f29;
 `;
 
 export const CalendarPage = () => {
