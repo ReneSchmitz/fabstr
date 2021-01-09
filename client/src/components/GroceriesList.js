@@ -22,14 +22,18 @@ const Container = styled.div`
     list-style-type: none;
     margin: 0px;
     padding: 0.8em 0;
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 3em auto auto;
     align-items: center;
   }
   h2 {
     font-size: 1.1em;
     font-weight: 400;
     color: #ffffff;
+  }
+  img {
+    position: relative;
+    justify-self: end;
   }
 `;
 
@@ -120,7 +124,8 @@ export default function GroceriesList() {
         {getFruit &&
           getFruit.map((foodItem) => (
             <li key={foodItem.type}>
-              {foodItem.name}
+              <span>{foodItem.quantity}</span>
+              <span>{foodItem.name}</span>
               <GetCheckBoxPink />
             </li>
           ))}
@@ -131,7 +136,8 @@ export default function GroceriesList() {
         {getDrink &&
           getDrink.map((foodItem) => (
             <li key={foodItem.type}>
-              {foodItem.name}
+              <span>{foodItem.quantity}</span>
+              <span>{foodItem.name}</span>
               <GetCheckBoxGreen />
             </li>
           ))}
@@ -143,7 +149,8 @@ export default function GroceriesList() {
         {getVegetable &&
           getVegetable.map((foodItem) => (
             <li key={foodItem.type}>
-              {foodItem.name}
+              <span>{foodItem.quantity}</span>
+              <span>{foodItem.name}</span>
               <GetCheckBoxOrange />
             </li>
           ))}
@@ -154,7 +161,8 @@ export default function GroceriesList() {
         {getCereal &&
           getCereal.map((foodItem) => (
             <li key={foodItem.type}>
-              {foodItem.name}
+              <span>{foodItem.quantity}</span>
+              <span>{foodItem.name}</span>
               <GetCheckBoxGrey />
             </li>
           ))}

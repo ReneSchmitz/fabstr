@@ -46,7 +46,7 @@ const Title = styled.h2`
 export const ListPage = () => {
   return (
     <Container>
-      <Title>Einkaufsliste</Title>
+      <Title>Groceries</Title>
       <Frame>
         <img src={groceries} alt="" />
       </Frame>
