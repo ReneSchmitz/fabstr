@@ -25,10 +25,10 @@ const Frame = styled.div`
   overflow: hidden;
   z-index: 1;
   img {
-    max-width: 100%;
+    max-width: 92%;
     position: relative;
-    top: -6.5em;
-    left: 4em;
+    top: -6em;
+    left: 4.3em;
   }
 `;
 

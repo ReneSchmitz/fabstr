@@ -27,9 +27,9 @@ const Frame = styled.div`
   box-shadow: 10px 10px 60px #0d569f29;
   img {
     opacity: 0.8;
-    max-width: 40%;
+    max-width: 38%;
     position: relative;
-    top: 2.8em;
+    top: 2.7em;
     left: 12em;
   }
 `;
