@@ -43,7 +43,7 @@ const Background = styled.img`
   z-index: -1;
   bottom: 0;
   left: 20%;
-  opacity: 0.2;
+  opacity: 0.4;
 `;
 
 export const HomePage = () => {
