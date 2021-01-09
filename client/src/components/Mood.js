@@ -4,17 +4,19 @@ import happy from "../assets/icon/jump.svg";
 import sad from "../assets/icon/moody.svg";
 import tip from "../assets/icon/tip.svg";
 
-const Header = styled.h1`
-  font-weight: 400;
+const Header = styled.h2`
+  font-size: 2.4em;
   position: fixed;
-  top: 23%;
+  top: 22%;
+  text-shadow: 6px 6px 6px #0d569f29;
 `;
 
 const Text = styled.h2`
   position: fixed;
-  top: 37%;
+  top: 33%;
   width: 90%;
   text-align: center;
+  text-shadow: 6px 6px 6px #0d569f29;
 `;
 
 const Container = styled.div`
@@ -22,7 +24,7 @@ const Container = styled.div`
   position: fixed;
   width: 90vw;
   justify-content: space-around;
-  top: 47%;
+  top: 45%;
 `;
 
 const CardContainer = styled(Link)`
@@ -63,7 +65,7 @@ const Sadness = styled.img`
 `;
 
 export default function Mood() {
-  const greeting = "Hi Lisa,";
+  const greeting = "Hi René,";
   const daily = "wie geht es dir heute?";
 
   return (
