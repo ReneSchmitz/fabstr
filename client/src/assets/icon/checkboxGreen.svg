@@ -1,9 +1,11 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 34 34">
-  <g id="Gruppe_33" data-name="Gruppe 33" transform="translate(-2908 154)">
-    <path id="Pfad_59" data-name="Pfad 59" d="M17,0A17,17,0,1,1,0,17,17,17,0,0,1,17,0Z" transform="translate(2908 -154)" fill="#98e6b9"/>
-    <g id="Gruppe_31" data-name="Gruppe 31" transform="translate(-145 -506.139)">
-      <path id="Pfad_38" data-name="Pfad 38" d="M3062.324,369.6h14.926" fill="none" stroke="#eff2f8" stroke-linecap="round" stroke-width="3"/>
-      <path id="Pfad_39" data-name="Pfad 39" d="M3062.324,369.6h14.926" transform="translate(3439.389 -2700.186) rotate(90)" fill="none" stroke="#eff2f8" stroke-linecap="round" stroke-width="3"/>
-    </g>
-  </g>
+<svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0)">
+<path d="M17 0C20.3623 0 23.6491 0.997033 26.4447 2.86502C29.2403 4.733 31.4193 7.38804 32.706 10.4944C33.9926 13.6007 34.3293 17.0189 33.6734 20.3165C33.0174 23.6142 31.3983 26.6433 29.0208 29.0208C26.6433 31.3983 23.6142 33.0174 20.3165 33.6734C17.0189 34.3293 13.6007 33.9926 10.4944 32.706C7.38804 31.4193 4.733 29.2403 2.86502 26.4447C0.997033 23.6491 0 20.3623 0 17C0 12.4913 1.79107 8.1673 4.97918 4.97918C8.1673 1.79107 12.4913 0 17 0V0Z" fill="#98E6B9"/>
+<path d="M9.32397 17.461H24.25" stroke="#EFF2F8" stroke-width="3" stroke-linecap="round"/>
+</g>
+<defs>
+<clipPath id="clip0">
+<rect width="34" height="34" fill="white"/>
+</clipPath>
+</defs>
 </svg>
