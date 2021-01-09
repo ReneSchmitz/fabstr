@@ -17,7 +17,7 @@ const SectionSlider = styled.section`
 const SlideHolder = styled.div`
   position: relative;
   align-items: start;
-  top: 12%;
+  top: 18%;
   left: 0;
   display: grid;
   overflow: auto;
