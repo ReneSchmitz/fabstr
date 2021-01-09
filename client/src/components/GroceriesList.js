@@ -3,6 +3,7 @@ import styled from "styled-components";
 import { getFruits, getDrinks, getVegetables, getCereals } from "../utils/api";
 import GetCheckBoxPink from "./CheckboxPink";
 import GetCheckBoxGreen from "./CheckboxGreen";
+import GetCheckBoxOrange from "./CheckboxOrange";
 
 const Container = styled.div`
   position: relative;
@@ -142,7 +143,7 @@ export default function GroceriesList() {
           getVegetable.map((foodItem) => (
             <li key={foodItem.type}>
               {foodItem.name}
-              <GetCheckBoxGreen />
+              <GetCheckBoxOrange />
             </li>
           ))}
         <br />
