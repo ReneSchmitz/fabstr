@@ -7,8 +7,8 @@ import GetCheckBoxOrange from "./CheckboxOrange";
 import GetCheckBoxGrey from "./CheckboxGrey";
 
 const Container = styled.div`
-  position: relative;
-  top: 8%;
+  position: fixed;
+  top: 27%;
   padding: 20px 0;
   height: 62vh;
   overflow: scroll;
