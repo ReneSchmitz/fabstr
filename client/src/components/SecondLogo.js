@@ -9,7 +9,7 @@ const Container = styled.div`
   box-sizing: border-box;
   display: center;
   @media (max-device-height: 800px) {
-    top: 0%;
+    top: 1.3%;
     transform: scale(0.7);
   }
 `;
