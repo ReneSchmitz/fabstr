@@ -49,14 +49,13 @@ const Quote = styled.div`
 `;
 
 const Title = styled.h2`
-  font-size: 2em;
+  font-size: 1.8em;
   font-weight: 400;
   position: fixed;
   top: 9%;
   display: grid;
   left: 15%;
   z-index: 2;
-  text-shadow: 6px 6px 6px #0d569f29;
 `;
 
 export const ActivityPage = () => {
