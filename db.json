@@ -16,10 +16,7 @@
       ],
       "timelog": "46h",
       "screentime": "10min",
-      "activities": [
-        "meditation",
-        "Yoga"
-      ]
+      "activities": ["meditation", "Yoga"]
     },
     {
       "id": 2,
@@ -37,10 +34,7 @@
       ],
       "timelog": "46h",
       "screentime": "10min",
-      "activities": [
-        "Yoga",
-        "Jogging"
-      ]
+      "activities": ["Yoga", "Jogging"]
     },
     {
       "id": 3,
@@ -253,71 +247,88 @@
   "groceries": [
     {
       "type": "fruit",
-      "name": "Zitronen"
+      "name": "Zitronen",
+      "quantity": "5"
     },
     {
       "type": "fruit",
-      "name": "Äpfel"
+      "name": "Äpfel",
+      "quantity": "2 kg"
     },
     {
       "type": "fruit",
-      "name": "Quitten"
+      "name": "Quitten",
+      "quantity": "2 kg"
     },
     {
       "type": "drink",
-      "name": "Buttermilch"
+      "name": "Buttermilch",
+      "quantity": "2 L"
     },
     {
       "type": "drink",
-      "name": "Kräutertee"
+      "name": "Kräutertee",
+      "quantity": "~"
     },
     {
       "type": "drink",
-      "name": "Johannisbeersaft"
+      "name": "Johannisbeersaft",
+      "quantity": "1 L"
     },
     {
       "type": "drink",
-      "name": "Rotebeetesaft"
+      "name": "Rotebeetesaft",
+      "quantity": "0.5 L"
     },
     {
       "type": "drink",
-      "name": "Sauerkrautsaft"
+      "name": "Sauerkrautsaft",
+      "quantity": "0.5 L"
     },
     {
       "type": "vegetable",
-      "name": "Kartoffeln"
+      "name": "Kartoffeln",
+      "quantity": "2 kg"
     },
     {
       "type": "vegetable",
-      "name": "Möhren"
+      "name": "Möhren",
+      "quantity": "1 kg"
     },
     {
       "type": "vegetable",
-      "name": "Knollensellerie"
+      "name": "Knollensellerie",
+      "quantity": "3"
     },
     {
       "type": "vegetable",
-      "name": "Petersilie"
+      "name": "Petersilie",
+      "quantity": "~"
     },
     {
       "type": "vegetable",
-      "name": "Petersilienwurzel"
+      "name": "Petersilienwurzeln",
+      "quantity": "2"
     },
     {
       "type": "vegetable",
-      "name": "Zwiebel"
+      "name": "Zwiebeln",
+      "quantity": "3"
     },
     {
       "type": "vegetable",
-      "name": "Porree"
+      "name": "Porree Stangen",
+      "quantity": "4"
     },
     {
       "type": "cereal",
-      "name": "Reis"
+      "name": "Reis",
+      "quantity": "1 kg"
     },
     {
       "type": "cereal",
-      "name": "Knäckebrot"
+      "name": "Knäckebrot",
+      "quantity": "25 g"
     }
   ]
 }

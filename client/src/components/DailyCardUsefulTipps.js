@@ -2,7 +2,7 @@ import styled from "styled-components/macro";
 
 const Container = styled.div`
   width: 270px;
-  height: 63vh;
+  height: 59vh;
   padding: 20px 40px;
   border-radius: 30px;
   background: lightgray;
@@ -25,7 +25,7 @@ const Header = styled.div`
 const TextContainer = styled.div`
   display: grid;
   overflow: auto;
-  height: 49vh;
+  height: 45vh;
   padding-right: 20px;
 `;
 
@@ -48,7 +48,7 @@ export default function Preparation() {
         </Header>
         <TextContainer>
           <Headline>Geschafft!</Headline>
-          <Content>Du hast deine Fastenkur ervolgreich abgeschlossen.</Content>
+          <Content>Du hast deine Fastenkur erfolgreich abgeschlossen.</Content>
           <Headline>Die Zeit danach</Headline>
           <Content>
             Der Grundstein für eine gesündere Zukunft ist gelegt. Also, versuche

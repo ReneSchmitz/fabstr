@@ -1,33 +1,47 @@
 import styled from "styled-components/macro";
-import smile from "../assets/icon/smile.svg";
-import sad from "../assets/icon/coloredSad.svg";
+import arrow from "../assets/icon/arrowRight.svg";
 import { Link } from "react-router-dom";
+import Meditation from "../components/ActivityMeditation";
 
-const Header = styled.h1`
-  font-family: Roboto;
-  font-weight: 400;
+const Header = styled.h2`
+  font-size: 2.4em;
   position: fixed;
-  top: 25%;
-  display: center;
+  top: 22%;
+  text-shadow: 6px 6px 6px #0d569f29;
 `;
 
 const Text = styled.h2`
   position: fixed;
-  top: 39%;
+  top: 33%;
+  width: 90%;
   text-align: center;
+  text-shadow: 6px 6px 6px #0d569f29;
+`;
+
+const Anchor = styled(Link)`
+  display: flex;
+  position: fixed;
+  width: 65%;
+  top: 79%;
+  justify-content: space-around;
+  align-items: center;
+  opacity: 0.5;
+  img {
+    width: 9%;
+  }
 `;
 
 const Container = styled.div`
+  display: flex;
   position: fixed;
-  top: 57%;
-`;
-
-const Happiness = styled.img`
-  margin-right: 10px;
-`;
-
-const Sadness = styled.img`
-  margin-left: 10px;
+  width: 90vw;
+  justify-content: space-around;
+  top: 49%;
+  a:first-child {
+    position: relative;
+    top: -30px;
+    transform: scale(0.8);
+  }
 `;
 
 export default function HappyComp() {
@@ -39,10 +53,11 @@ export default function HappyComp() {
       <Header>{sadText}</Header>
       <Text>{sadDaily}</Text>
       <Container>
-        <Link to="/home">
-          <Happiness src={smile} alt="happy" />
-          <Sadness src={sad} alt="sad" />
-        </Link>
+        <Meditation />
+        <Anchor to="/activity">
+          <span>Alle Aktivitäten entdecken</span>
+          <img src={arrow} alt="arrow" />
+        </Anchor>
       </Container>
     </>
   );

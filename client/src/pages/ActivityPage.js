@@ -1,6 +1,6 @@
 import styled from "styled-components/macro";
 import ActivitySlider from "../components/ActivitySlider";
-import image from "../assets/img/oceanTwo.jpg";
+import activity from "../assets/icon/activity.svg";
 import quote from "../assets/icon/quoteRight.svg";
 import Navigation from "../components/Navigation";
 
@@ -17,17 +17,18 @@ const Container = styled.div`
 `;
 
 const Frame = styled.div`
-  opacity: 0.6;
+  opacity: 0.8;
   position: fixed;
   top: 0;
   left: 0;
-  max-height: 30%;
+  max-height: 27%;
   overflow: hidden;
   z-index: 1;
   img {
-    max-width: 100%;
+    max-width: 92%;
     position: relative;
-    top: -5em;
+    top: -6em;
+    left: 4.3em;
   }
 `;
 
@@ -37,7 +38,7 @@ const Quote = styled.div`
   grid-template-rows: 40px auto;
   width: 80%;
   position: fixed;
-  top: 34%;
+  top: 32%;
   span {
     font-family: "Bodoni 72", serif;
     font-weight: 800;
@@ -48,15 +49,13 @@ const Quote = styled.div`
 `;
 
 const Title = styled.h2`
-  font-size: 2em;
-  font-weight: 800;
+  font-size: 1.8em;
+  font-weight: 400;
   position: fixed;
   top: 9%;
   display: grid;
-  left: 2.4em;
+  left: 15%;
   z-index: 2;
-  color: #ffffff;
-  text-shadow: 20px 20px 60px #303030, -20px -20px 60px #424040;
 `;
 
 export const ActivityPage = () => {
@@ -64,7 +63,7 @@ export const ActivityPage = () => {
     <Container>
       <Title>Activity</Title>
       <Frame>
-        <img src={image} alt="" />
+        <img src={activity} alt="" />
       </Frame>
       <Quote>
         <p>Today&lsquo;s inspiration</p>

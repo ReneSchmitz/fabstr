@@ -1,14 +1,20 @@
 import { useEffect, useState } from "react";
 import styled from "styled-components";
 import { getFruits, getDrinks, getVegetables, getCereals } from "../utils/api";
-import GetCheckBox from "./Checkbox";
+import GetCheckBoxPink from "./CheckboxPink";
+import GetCheckBoxGreen from "./CheckboxGreen";
+import GetCheckBoxOrange from "./CheckboxOrange";
+import GetCheckBoxGrey from "./CheckboxGrey";
 
 const Container = styled.div`
-  /* position: fixed; */
-  height: 60vh;
+  position: fixed;
+  top: 27%;
+  padding: 20px 0;
+  height: 62vh;
   overflow: scroll;
   text-decoration: none;
   width: 70%;
+  z-index: 1;
   @media (min-device-width: 450px) {
     width: 50%;
   }
@@ -16,13 +22,59 @@ const Container = styled.div`
     list-style-type: none;
     margin: 0px;
     padding: 0.8em 0;
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 3em auto auto;
     align-items: center;
   }
   h2 {
-    font-weight: 800;
+    font-size: 1.1em;
+    font-weight: 400;
+    color: #ffffff;
   }
+  img {
+    position: relative;
+    justify-self: end;
+  }
+`;
+
+const FramePink = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  width: 100%;
+  background: #e7b0ed;
+  border-radius: 30px;
+`;
+
+const FrameGreen = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  width: 100%;
+  background: #98e6b9;
+  border-radius: 30px;
+`;
+
+const FrameOrange = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  width: 100%;
+  background: #f2c384;
+  border-radius: 30px;
+`;
+
+const FrameGrey = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  width: 100%;
+  background: lightgray;
+  border-radius: 30px;
 `;
 
 export default function GroceriesList() {
@@ -66,44 +118,52 @@ export default function GroceriesList() {
   return (
     <Container>
       <ul>
-        <h2>Obst</h2>
-        <hr />
+        <FramePink>
+          <h2>Obst</h2>
+        </FramePink>
         {getFruit &&
           getFruit.map((foodItem) => (
             <li key={foodItem.type}>
-              {foodItem.name}
-              <GetCheckBox />
+              <span>{foodItem.quantity}</span>
+              <span>{foodItem.name}</span>
+              <GetCheckBoxPink />
             </li>
           ))}
         <br />
-        <h2>Getränke</h2>
-        <hr />
+        <FrameGreen>
+          <h2>Getränke</h2>
+        </FrameGreen>
         {getDrink &&
           getDrink.map((foodItem) => (
             <li key={foodItem.type}>
-              {foodItem.name}
-              <GetCheckBox />
+              <span>{foodItem.quantity}</span>
+              <span>{foodItem.name}</span>
+              <GetCheckBoxGreen />
             </li>
           ))}
 
         <br />
-        <h2>Gemüse</h2>
-        <hr />
+        <FrameOrange>
+          <h2>Gemüse</h2>
+        </FrameOrange>
         {getVegetable &&
           getVegetable.map((foodItem) => (
             <li key={foodItem.type}>
-              {foodItem.name}
-              <GetCheckBox />
+              <span>{foodItem.quantity}</span>
+              <span>{foodItem.name}</span>
+              <GetCheckBoxOrange />
             </li>
           ))}
         <br />
-        <h2>Getreide</h2>
-        <hr />
+        <FrameGrey>
+          <h2>Getreide</h2>
+        </FrameGrey>
         {getCereal &&
           getCereal.map((foodItem) => (
             <li key={foodItem.type}>
-              {foodItem.name}
-              <GetCheckBox />
+              <span>{foodItem.quantity}</span>
+              <span>{foodItem.name}</span>
+              <GetCheckBoxGrey />
             </li>
           ))}
       </ul>
