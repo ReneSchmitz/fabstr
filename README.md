@@ -2,7 +2,7 @@
 
 Fabstr. is a user-friendly assistance app designed for everyone. Therapeutic fasting is the best choice to boost your immune system and activate self-healing processes. No hour-long research is needed. You can start at any time because Fabstr. gives you all information you need at a glance.
 
-![Image of Fabstr. App](client/src/assets/gif/Rene.Schmitz.Fabstr.gif)
+![Image of Fabstr. App](client/src/assets/gif/Rene.Schmitz.Fabstr.gif){:height="70%" width="70%"}
 
 ## Try yourself
 
