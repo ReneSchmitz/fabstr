@@ -8,11 +8,12 @@ Fabstr. is a user-friendly assistance app designed for everyone. Therapeutic fas
 
 [Fabstr. - Therapeutic Fasting](https://blue-collar-rocket.herokuapp.com/)
 
-Please be patient. It could take up to 30 seconds to spin up the server.
+- Fabstr. was designed to work on every device but it is looking the best especially on smartphones in an upright position.
+- Please be patient. It could take up to 30 seconds to spin up the server.
 
 ## Install app
 
-Fell free to clone this repository and play around.
+Feel free to clone this repository and play around.
 
 - Clone this repository
 - Run `npm i` on server side
